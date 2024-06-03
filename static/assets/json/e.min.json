@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Super Mario Bros.",
+    "link": "https://emulator-games.pages.dev/Super Mario Bros.",
+    "image": "/assets/media/icons/emulator/smb.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Super Mario Bros. 2",
+    "link": "https://emulator-games.pages.dev/Super Mario Bros. 2",
+    "image": "/assets/media/icons/emulator/smb2.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Super Mario Bros. 3",
+    "link": "https://emulator-games.pages.dev/Super Mario Bros. 3",
+    "image": "/assets/media/icons/emulator/smb3.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Dr. Mario",
+    "link": "https://emulator-games.pages.dev/Dr. Mario",
+    "image": "/assets/media/icons/emulator/dm.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Mario is Missing!",
+    "link": "https://emulator-games.pages.dev/Mario is Missing!",
+    "image": "/assets/media/icons/emulator/mim!.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "2048",
+    "link": "https://emulator-games.pages.dev/2048",
+    "image": "/assets/media/icons/emulator/2048.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Bases Loaded",
+    "link": "https://emulator-games.pages.dev/Bases Loaded",
+    "image": "/assets/media/icons/emulator/bl.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Bases Loaded 3",
+    "link": "https://emulator-games.pages.dev/Bases Loaded 3",
+    "image": "/assets/media/icons/emulator/bl3.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Bases Loaded 4",
+    "link": "https://emulator-games.pages.dev/Bases Loaded 4",
+    "image": "/assets/media/icons/emulator/bl4.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Baseball Stars",
+    "link": "https://emulator-games.pages.dev/Baseball Stars",
+    "image": "/assets/media/icons/emulator/bs.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Baseball Stars II",
+    "link": "https://emulator-games.pages.dev/Baseball Stars II",
+    "image": "/assets/media/icons/emulator/bsII.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Adventure Island",
+    "link": "https://emulator-games.pages.dev/Adventure Island",
+    "image": "/assets/media/icons/emulator/ai.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Adventure Island II",
+    "link": "https://emulator-games.pages.dev/Adventure Island II",
+    "image": "/assets/media/icons/emulator/aiII.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Adventures of Lolo",
+    "link": "https://emulator-games.pages.dev/Adventures of Lolo",
+    "image": "/assets/media/icons/emulator/aol.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Adventures of Lolo 2",
+    "link": "https://emulator-games.pages.dev/Adventures of Lolo 2",
+    "image": "/assets/media/icons/emulator/aol2.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Adventures of Lolo 3",
+    "link": "https://emulator-games.pages.dev/Adventures of Lolo 3",
+    "image": "/assets/media/icons/emulator/aol3.webp",
+    "categories": ["all"]
+  }
+]
