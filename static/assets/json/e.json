@@ -94,5 +94,23 @@
     "link": "https://emulator-games.pages.dev/Adventures of Lolo 3",
     "image": "/assets/media/icons/emulator/aol3.webp",
     "categories": ["all"]
+  },
+  {
+    "name": "1943 - The Battle of Midway",
+    "link": "https://emulator-games.pages.dev/1943 - The Battle of Midway",
+    "image": "/assets/media/icons/emulator/1943tbm.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Advanced Dungeons & Dragons - DragonStrike",
+    "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - DragonStrike",
+    "image": "/assets/media/icons/emulator/ad&dd.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Advanced Dungeons & Dragons - Heroes of the Lance",
+    "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - Heroes of the Lance",
+    "image": "/assets/media/icons/emulator/ad&dh.webp",
+    "categories": ["all"]
   }
 ]
