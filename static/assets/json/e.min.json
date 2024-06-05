@@ -112,5 +112,17 @@
     "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - Heroes of the Lance",
     "image": "/assets/media/icons/emulator/ad&dh.webp",
     "categories": ["all"]
+  },
+  {
+    "name": "Advanced Dungeons & Dragons - Pool of Radiance",
+    "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - Pool of Radiance",
+    "image": "/assets/media/icons/emulator/ad&dp.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Advanced Dungeons & Dragons - Hillsfar",
+    "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - Hillsfar",
+    "image": "/assets/media/icons/emulator/ad&dhr.webp",
+    "categories": ["all"]
   }
 ]
