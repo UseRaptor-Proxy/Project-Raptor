@@ -28,3 +28,9 @@
   /* Other Colors */
   --tab-hover: #6495ed;
 }
+
+#announcement {
+  position: relative;
+  top: 0;
+  
+}
