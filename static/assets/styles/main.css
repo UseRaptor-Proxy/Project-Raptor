@@ -85,7 +85,7 @@ body {
   width: fill;
   margin: 15px;
   z-index: 100;
-  position: relative;
+  position: absolute;
 }
 
 .fixed-nav-bar .icon:hover {
