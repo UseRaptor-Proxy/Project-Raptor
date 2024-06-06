@@ -4,6 +4,8 @@ package-lock.json
 package.json
 /static/assets/-/
 /static/assets/scripts/
+/static/assets/styles/
+/static/assets/json/
 /static/dy/
 **/*.min.*
 prettierrc
