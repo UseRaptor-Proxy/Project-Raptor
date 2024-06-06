@@ -22,7 +22,9 @@
     "express": "^4.19.2",
     "express-basic-auth": "^1.2.1",
     "mime": "^4.0.3",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "npm": "^10.8.1",
+    "pnpm": "^9.2.0"
   },
   "devDependencies": {
     "prettier": "3.3.0"
