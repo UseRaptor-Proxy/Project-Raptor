@@ -32,16 +32,16 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL();
+    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL() 
     location.replace(pLink)
 
     const script = doc.createElement("script")
     script.textContent = `
       window.onbeforeunload = function (event) {
-        const confirmationMessage = 'Leave Site?';
-        (event || window.event).returnValue = confirmationMessage;
-        return confirmationMessage;
-      };
+        const confirmationMessage = 'Leave Site?' 
+        (event || window.event).returnValue = confirmationMessage 
+        return confirmationMessage 
+      } 
     `
     doc.head.appendChild(script)
   }
@@ -195,10 +195,10 @@ function getRandomURL() {
     "https://slides.google.com",
     "https://www.nasa.gov",
     "https://blooket.com",
-  ];
-  return randomURLS[randRange(0, randomURLS.length)];
+  ] 
+  return randomURLS[randRange(0, randomURLS.length)] 
 }
 
 function randRange(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
+  return Math.floor(Math.random() * (max - min) + min) 
 }

@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.getItem("dy") === null ||
     localStorage.getItem("dy") === undefined
   ) {
-    localStorage.setItem("dy", "false");
+    localStorage.setItem("dy", "false") 
   }
-});
+}) 
 // Nav
-var nav = document.querySelector(".fixed-nav-bar");
+var nav = document.querySelector(".fixed-nav-bar") 
 
 if (nav) {
   var html = `
@@ -86,59 +86,59 @@ if (nav) {
           : ""
       }
       <a class="navbar-link" href="/./st"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>Set</an><an>tings</an></a>
-    </div>`;
-  nav.innerHTML = html;
+    </div>` 
+  nav.innerHTML = html 
 }
 
 // Themes
-var themeid = localStorage.getItem("theme");
-themeEle = document.createElement("link");
-themeEle.rel = "stylesheet";
+var themeid = localStorage.getItem("theme") 
+themeEle = document.createElement("link") 
+themeEle.rel = "stylesheet" 
 if (themeid == "catppuccinMocha") {
-  themeEle.href = "/assets/styles/themes/catppuccin/mocha.css?v=1";
-  document.body.appendChild(themeEle);
+  themeEle.href = "/assets/styles/themes/catppuccin/mocha.css?v=1" 
+  document.body.appendChild(themeEle) 
 }
 if (themeid == "catppuccinMacchiato") {
-  themeEle.href = "/assets/styles/themes/catppuccin/macchiato.css?v=1";
-  document.body.appendChild(themeEle);
+  themeEle.href = "/assets/styles/themes/catppuccin/macchiato.css?v=1" 
+  document.body.appendChild(themeEle) 
 }
 if (themeid == "catppuccinFrappe") {
-  themeEle.href = "/assets/styles/themes/catppuccin/frappe.css?v=1";
-  document.body.appendChild(themeEle);
+  themeEle.href = "/assets/styles/themes/catppuccin/frappe.css?v=1" 
+  document.body.appendChild(themeEle) 
 }
 if (themeid == "catppuccinLatte") {
-  themeEle.href = "/assets/styles/themes/catppuccin/latte.css?v=1";
-  document.body.appendChild(themeEle);
+  themeEle.href = "/assets/styles/themes/catppuccin/latte.css?v=1" 
+  document.body.appendChild(themeEle) 
 } else {
-  var customThemeEle = document.createElement("style");
-  customThemeEle.textContent = localStorage.getItem("theme-" + themeid);
-  document.head.appendChild(customThemeEle);
-  document.body.appendChild(themeEle);
+  var customThemeEle = document.createElement("style") 
+  customThemeEle.textContent = localStorage.getItem("theme-" + themeid) 
+  document.head.appendChild(customThemeEle) 
+  document.body.appendChild(themeEle) 
 }
 // Tab Cloaker
 document.addEventListener("DOMContentLoaded", function (event) {
-  const icon = document.getElementById("tab-favicon");
-  const name = document.getElementById("tab-title");
-  const selectedValue = localStorage.getItem("selectedOption");
+  const icon = document.getElementById("tab-favicon") 
+  const name = document.getElementById("tab-title") 
+  const selectedValue = localStorage.getItem("selectedOption") 
 
   function setCloak(nameValue, iconUrl) {
-    const customName = localStorage.getItem("CustomName");
-    const customIcon = localStorage.getItem("CustomIcon");
+    const customName = localStorage.getItem("CustomName") 
+    const customIcon = localStorage.getItem("CustomIcon") 
 
     if (customName) {
-      nameValue = customName;
+      nameValue = customName 
     }
     if (customIcon) {
-      iconUrl = customIcon;
+      iconUrl = customIcon 
     }
 
     if (iconUrl) {
-      icon.setAttribute("href", iconUrl);
-      localStorage.setItem("icon", iconUrl);
+      icon.setAttribute("href", iconUrl) 
+      localStorage.setItem("icon", iconUrl) 
     }
     if (nameValue) {
-      name.textContent = nameValue;
-      localStorage.setItem("name", nameValue);
+      name.textContent = nameValue 
+      localStorage.setItem("name", nameValue) 
     }
   }
 
@@ -320,37 +320,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
       name: "Big Ideas Math",
       icon: "/assets/media/favicon/bim.ico",
     },
-  };
+  } 
 
   if (options[selectedValue]) {
-    setCloak(options[selectedValue].name, options[selectedValue].icon);
+    setCloak(options[selectedValue].name, options[selectedValue].icon) 
   }
-});
+}) 
 // Key
 document.addEventListener("DOMContentLoaded", function () {
   const eventKey = JSON.parse(localStorage.getItem("eventKey")) || [
     "Ctrl",
     "E",
-  ];
+  ] 
   const pLink =
-    localStorage.getItem("pLink") || "https://classroom.google.com/";
-  let pressedKeys = [];
+    localStorage.getItem("pLink") || "https://classroom.google.com/" 
+  let pressedKeys = [] 
 
   document.addEventListener("keydown", function (event) {
-    pressedKeys.push(event.key);
+    pressedKeys.push(event.key) 
     if (pressedKeys.length > eventKey.length) {
-      pressedKeys.shift();
+      pressedKeys.shift() 
     }
     if (eventKey.every((key, index) => key === pressedKeys[index])) {
-      window.location.href = pLink;
-      pressedKeys = [];
+      window.location.href = pLink 
+      pressedKeys = [] 
     }
-  });
-});
+  }) 
+}) 
 // Background Image
 document.addEventListener("DOMContentLoaded", function () {
-  var savedBackgroundImage = localStorage.getItem("backgroundImage");
+  var savedBackgroundImage = localStorage.getItem("backgroundImage") 
   if (savedBackgroundImage) {
-    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')";
+    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')" 
   }
-});
+}) 

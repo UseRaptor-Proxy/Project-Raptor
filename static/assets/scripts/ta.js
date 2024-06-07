@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     newTab.setAttribute("draggable", true)
     const closeButton = document.createElement("button")
     closeButton.classList.add("close-tab")
-    closeButton.innerHTML = "&#10005;"
+    closeButton.innerHTML = "&#10005"
     closeButton.addEventListener("click", closeTab)
     newTab.appendChild(tabTitle)
     newTab.appendChild(closeButton)

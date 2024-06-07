@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/UseProject-Raptor/Project-Raptor/.github/branding/pr.png">
+    <img src="/.github/branding/pr.png">
     <p>Serving over 1+ million users since 2024.<p>
     <p>Project-Raptor is a web proxy with a Clean and Sleek UI and easy to use menus. Our goal is to provide the best user experience to everyone.</p>
 </div>
