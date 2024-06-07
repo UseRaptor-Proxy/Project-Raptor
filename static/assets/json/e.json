@@ -124,5 +124,23 @@
     "link": "https://emulator-games.pages.dev/Advanced Dungeons & Dragons - Hillsfar",
     "image": "/assets/media/icons/emulator/ad&dhr.webp",
     "categories": ["all"]
+  },
+  {
+    "name": "Castlevania",
+    "link": "https://emulator-games.pages.dev/Castlevania",
+    "image": "/assets/media/icons/emulator/ca.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Castlevania II - Simon's Quest",
+    "link": "https://emulator-games.pages.dev/Castlevania II - Simon's Quest",
+    "image": "/assets/media/icons/emulator/caiis.webp",
+    "categories": ["all"]
+  },
+  {
+    "name": "Castlevania III - Dracula's Curse",
+    "link": "https://emulator-games.pages.dev/Castlevania III - Dracula's Curse",
+    "image": "/assets/media/icons/emulator/caiiid.webp",
+    "categories": ["all"]
   }
 ]
