@@ -5,7 +5,7 @@ package.json
 /static/assets/-/
 /static/assets/scripts/
 /static/assets/styles/
-/static/assets/json/
+/static/assets/json/*.min.*
 /static/dy/
 **/*.min.*
 prettierrc
