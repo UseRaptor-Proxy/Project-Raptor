@@ -95,5 +95,11 @@
     "link": "https://talkai.info/chat/",
     "image": "/assets/media/icons/ta.webp",
     "categories": ["all", "ai"]
+  },
+  {
+    "name": "Internet Archive",
+    "link": "https://archive.org",
+    "image": "/assets/media/icons/ina.png",
+    "categories": ["all", "media"]
   }
 ]

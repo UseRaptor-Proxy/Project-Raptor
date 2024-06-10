@@ -437,5 +437,11 @@
     "image": "/assets/media/icons/MW.png",
     "say": "This is not an official domain for Movie Web",
     "categories": ["all", "media"]
+  },
+  {
+    "name": "Internet Archive",
+    "link": "https://archive.org",
+    "image": "/assets/media/icons/ina.png",
+    "categories": ["all", "media"]
   }
 ]
