@@ -79,7 +79,7 @@ if (nav) {
   var html = `
     <div class="fixed-nav-bar-container">
     <div id=icon-container>
-      <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
+      <a class="icon" href="/./">PR</a>
     </div>
     </div>
     <div class="fixed-nav-bar-right">

@@ -1,5 +1,11 @@
 [
   {
+    "name": "! [NEW] Request An App",
+    "link": "https://form.jotform.com/240043772556153",
+    "image": "/assets/media/icons/request.webp",
+    "categories": ["all"]
+  },
+  {
     "name": "GPTZero.me",
     "link": "https://gptzero.me/",
     "image": "/assets/media/icons/gz.webp",

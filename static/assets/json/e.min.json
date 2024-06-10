@@ -1,5 +1,11 @@
 [
   {
+    "name": "! [NEW] Request An App",
+    "link": "https://form.jotform.com/240043772556153",
+    "image": "/assets/media/icons/request.webp",
+    "categories": ["all"]
+  },
+  {
     "name": "Super Mario Bros.",
     "link": "https://emulator-games.pages.dev/Super Mario Bros.",
     "image": "/assets/media/icons/emulator/smb.webp",
