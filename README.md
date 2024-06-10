@@ -35,8 +35,34 @@ You must run these commands on your server:
 ```bash
 git clone https://github.com/UseProject-Raptor/Project-Raptor
 cd Project-Raptor
-npm install
-npm start
+```
+Next depending on your package manager, run one of the following commands:
+
+#### Bun
+
+If you are using Bun, run the following commands:
+
+```bash
+bun i
+bun start
+```
+
+#### pnpm
+
+If you are using pnpm, run the following commands:
+
+```bash
+pnpm i
+pnpm start
+```
+
+#### npm
+
+If you are using npm, run the following commands:
+
+```bash
+npm i
+npm run start
 ```
 
 ### Updating

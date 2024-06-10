@@ -1,6 +1,6 @@
 {
   "name": "Project-Raptor",
-  "version": "2.3.2",
+  "version": "2.4",
   "type": "module",
   "engines": {
     "npm": ">=10.0.0",
@@ -16,6 +16,7 @@
     "@fastify/http-proxy": "^9.5.0",
     "@titaniumnetwork-dev/ultraviolet": "^3.1.2",
     "@tomphttp/bare-server-node": "^2.0.3",
+    "chalk": "^5.3.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

@@ -9,6 +9,9 @@ import mime from "mime"
 import fetch from "node-fetch"
 import config from "./config.js"
 import { setupMasqr } from "./Masqr.js"
+import chalk from "chalk"
+
+console.log(chalk.yellow("🚀 Starting server..."))
 
 const __dirname = process.cwd()
 const server = http.createServer()
@@ -19,13 +22,11 @@ const cache = new Map()
 const CACHE_TTL = 30 * 24 * 60 * 60 * 1000 // Cache for 30 Days
 
 if (config.challenge) {
-  console.log(
-    `Password protection is enabled. Usernames are: ${Object.keys(
-      config.users
-    )}`
-  );
-  console.log(`Passwords are: ${Object.values(config.users)}`);
-  app.use(basicAuth({ users: config.users, challenge: true }));
+  console.log(chalk.green("🔒 Password protection is enabled! Listing logins below"))
+  Object.entries(config.users).forEach(([username, password]) => {
+    console.log(chalk.blue(`Username: ${username}, Password: ${password}`))
+  })
+  app.use(basicAuth({ users: config.users, challenge: true }))
 }
 
 app.get("/e/*", async (req, res, next) => {
@@ -132,7 +133,7 @@ server.on("upgrade", (req, socket, head) => {
 })
 
 server.on("listening", () => {
-  console.log(`Running at http://localhost:${PORT}`)
+  console.log(chalk.green(`🌍 Server is running on http://localhost:${PORT}`))
 })
 
 server.listen({ port: PORT })
