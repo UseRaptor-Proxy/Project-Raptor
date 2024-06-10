@@ -76,3 +76,9 @@ body {
   position: absolute;
   z-index: 99;
 }
+
+#announcement {
+  top: 0;
+  color: #fff;
+  position: fixed;
+}
