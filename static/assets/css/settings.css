@@ -329,12 +329,15 @@ select {
 .popup button.black {
    border: 2px solid var(--black-button);  
 }
+
 .popup button.black:hover {
   background-color: var(--black-button);
 }
+
 .popup button.white {
    border: 2px solid var(--text-primary);  
 }
+
 .popup button.white:hover {
   background-color: var(--text-primary);
   color: var(--black-button)
