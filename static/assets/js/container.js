@@ -156,11 +156,11 @@ function Custom(app) {
     }
 
     CustomApp(customApp)
-    initializeCustomApp(customApp)
+    CreateCustomApp(customApp)
   }
 }
 
-function initializeCustomApp(customApp) {
+function CreateCustomApp(customApp) {
   const columnDiv = document.createElement("div")
   columnDiv.classList.add("column")
   columnDiv.setAttribute("data-category", "all")
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (storedApps) {
     Object.values(storedApps).forEach((app) => {
-      initializeCustomApp(app)
+      CreateCustomApp(app)
     })
   }
 })

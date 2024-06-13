@@ -9,7 +9,9 @@ if (!localStorage.getItem("ab")) localStorage.setItem("ab", true)
 if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem("ab") === "true") {
   const popup = open("about:blank", "_blank")
   if (!popup || popup.closed) {
-    alert("Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.")
+    alert(
+      "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings."
+    )
   } else {
     const doc = popup.document
     const iframe = doc.createElement("iframe")
@@ -32,16 +34,16 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL() 
+    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL()
     location.replace(pLink)
 
     const script = doc.createElement("script")
     script.textContent = `
       window.onbeforeunload = function (event) {
-        const confirmationMessage = 'Leave Site?' 
-        (event || window.event).returnValue = confirmationMessage 
-        return confirmationMessage 
-      } 
+        const confirmationMessage = 'Leave Site?';
+        (event || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
+      };
     `
     doc.head.appendChild(script)
   }
@@ -162,8 +164,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     particlesJS("particles-js", particlesConfig)
   }
 })
-// Splash Texts
-let SplashT = [
+// Splash texts
+const SplashT = [
   "Developed By JackGrounds and GlobalFun",
   "Thanks for using the site",
   "JackGrounds is BACK!",
@@ -171,7 +173,6 @@ let SplashT = [
   "Subscribe to my Youtube (@JackGrounds)",
   "Check out the settings page",
   "Over 1 Million people use this site",
-  // what if we added the hub here :trol:
 ]
 
 let SplashI = Math.floor(Math.random() * SplashT.length)
@@ -185,7 +186,7 @@ function US() {
 SplashE.innerText = SplashT[SplashI]
 
 SplashE.addEventListener("click", US)
-
+// Random URL
 function getRandomURL() {
   let randomURLS = [
     "https://kahoot.it",
@@ -201,10 +202,10 @@ function getRandomURL() {
     "https://khanacademy.org",
     "https://wikipedia.org",
     "https://dictionary.com",
-  ]; 
-  return randomURLS[randRange(0, randomURLS.length)] 
+  ]
+  return randomURLS[randRange(0, randomURLS.length)]
 }
 
 function randRange(min, max) {
-  return Math.floor(Math.random() * (max - min) + min) 
+  return Math.floor(Math.random() * (max - min) + min)
 }
