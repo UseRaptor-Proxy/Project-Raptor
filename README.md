@@ -71,14 +71,12 @@ npm run start
 cd Project-Raptor
 git pull --force --allow-unrelated-histories # This may overwrite your local changes
 ```
-<!--
-<a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/interstellarnetwork/interstellar"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
-<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/interstellarnetwork/interstellar"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
-<a target="_blank" href="https://app.cyclic.sh/api/app/deploy/interstellarnetwork/Interstellar"><img alt="Deploy to Cyclic" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg"></a>-->
 
 ### Deployment Alternatives
+<a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/UseProject-Raptor/Project-Raptor"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
+<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/UseProject-Raptor/Project-Raptor"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
 
-This includes methods of deploying to Render/OnRender.
+Other methods of deploying are Render/OnRender.
 
 #### What happened to Replit Deployment?
 
