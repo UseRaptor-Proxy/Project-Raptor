@@ -461,5 +461,11 @@
     "link": "https://archive.org",
     "image": "/assets/media/icons/ina.png",
     "categories": ["all", "media"]
+  },
+  {
+    "name": "GBA Games",
+    "link": "https://gba.js.org/",
+    "image": "/assets/media/icons/gba.png",
+    "categories": ["all", "emu"]
   }
 ]
