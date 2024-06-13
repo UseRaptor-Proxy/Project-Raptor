@@ -1,12 +1,12 @@
-dist/
 node_modules
 package-lock.json
 package.json
 /static/assets/-/
 /static/assets/scripts/
 /static/assets/styles/
-/static/assets/json/*.min.*
+/static/assets/json/
 /static/dy/
 **/*.min.*
-prettierrc
-README.md
+.prettierrc
+*.md
+bun.lockb
