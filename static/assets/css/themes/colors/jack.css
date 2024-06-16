@@ -16,6 +16,6 @@
   --text-primary: #fef9f9; /* Primary Text Color */
   --text-dark: #fdf9f9; /* Dark Text Color for Error Page, Scrollbar, and Particles */
   --text-placeholder: #fdfcfc; /* Placeholder Text Color */
-  option:disabled { color: #000000; } /* Disabled Option Text Color. You can't put css after it */
+  --option-disabled: #000000; /* Disabled Option Text Color */
   /* Other Variables */
 }
