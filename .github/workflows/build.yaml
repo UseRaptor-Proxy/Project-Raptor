@@ -12,13 +12,11 @@ jobs:
                   node-version: "22.x.x"
 
             - run: sudo apt update
+
             - run: sudo apt upgrade -y
 
-            - name: Update Npm
-                run: npm install -g npm
+            - run: npm install -g npm
             
-            - name: Install Pnpm
-                run: npm install pnpm
-    
-            - name: Update Pnpm
-                run: pnpm install -g ppnpm
+            - run: npm install pnpm
+
+            - run: pnpm install -g ppnpm
