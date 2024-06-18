@@ -13,4 +13,5 @@ jobs:
             - run: sudo apt update
             - run: sudo apt upgrade -y
             - run: npm install pnpm
-            - run: npm install -g npm        
+            - run: npm install -g npm 
+            - run: pnpm install -g pnpm 
