@@ -15,6 +15,8 @@ jobs:
 
             - run: sudo apt upgrade -y
 
-            - run: npm install -g npm
+            - run: npm install -g npm@10.8.1
             
             - run: npm install pnpm
+
+            - run: pnpm add -g pnpm
