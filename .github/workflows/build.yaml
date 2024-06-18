@@ -11,9 +11,8 @@ jobs:
               with:
                   node-version: "22.x.x"
 
-            - name: Update Ubuntu
-                run: sudo apt update
-                run: sudo apt upgrade -y
+            - run: sudo apt update
+            - run: sudo apt upgrade -y
 
             - name: Update Npm
                 run: npm install -g npm
