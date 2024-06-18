@@ -19,4 +19,4 @@ jobs:
             
             - run: npm install pnpm
 
-            - run: pnpm install -g ppnpm
+            - run: pnpm install -g pnpm
