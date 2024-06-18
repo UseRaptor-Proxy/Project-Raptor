@@ -10,8 +10,17 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "22.x.x"
-            - run: sudo apt update
-            - run: sudo apt upgrade -y
-            - run: npm install pnpm
-            - run: npm install -g npm 
-            - run: pnpm install -g pnpm 
+
+            - name: Update Ubuntu
+                run: sudo apt update
+                run: sudo apt upgrade -y
+
+            - name: Update Npm
+                run: npm install -g npm
+            
+            - name: Install Pnpm
+                run: npm install pnpm
+    
+            - name: Update Pnpm
+                run: |
+                pnpm install -g ppnpm
