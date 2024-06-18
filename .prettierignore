@@ -1,11 +1,8 @@
 node_modules
 package-lock.json
 package.json
-/static/assets/-/
-/static/assets/scripts/
-/static/assets/styles/
-/static/assets/json/
-/static/dy/
+/static/assets/-uv/
+/static/assets/-dy/
 **/*.min.*
 .prettierrc
 *.md
