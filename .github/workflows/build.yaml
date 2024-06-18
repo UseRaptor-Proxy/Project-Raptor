@@ -18,5 +18,3 @@ jobs:
             - run: npm install -g npm
             
             - run: npm install pnpm
-
-            - run: pnpm install -g pnpm
