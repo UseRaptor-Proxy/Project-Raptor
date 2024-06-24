@@ -1,6 +1,6 @@
 {
   "name": "Project-Raptor",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "type": "module",
   "engines": {
     "npm": ">=10.0.0",
@@ -8,7 +8,7 @@
   },
 	"scripts": {
 		"start": "node index.js",
-		"format": "npx prettier . --write",
+		"format": "nbiome format --write .",
 		"precommit": "biome check --write .",
 		"lint": "biome lint --write ."
 	},
@@ -28,7 +28,6 @@
 		"node-fetch": "^3.3.2"
   },
 	"devDependencies": {
-		"@biomejs/biome": "1.8.1",
-		"prettier": "3.3.2"
+		"@biomejs/biome": "1.8.2"
 	}
 }
