@@ -15,8 +15,8 @@ importers:
         specifier: ^3.1.2
         version: 3.1.2
       '@tomphttp/bare-server-node':
-        specifier: ^2.0.3
-        version: 2.0.3
+        specifier: ^2.0.4
+        version: 2.0.4
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -117,8 +117,8 @@ packages:
   '@titaniumnetwork-dev/ultraviolet@3.1.2':
     resolution: {integrity: sha512-PvhyL9IQtSwHTVRRpNGn+YCWkSzP7JEk0wX7M5YfUSobBicoRLOJhCC4u6T9qh/vObDpLDE3TfP4GKqMTSa2rw==}
 
-  '@tomphttp/bare-server-node@2.0.3':
-    resolution: {integrity: sha512-IGzZspDwzto+oPsvlV99OALJKH3X1nRWnpBE8EY6nrqu5I83xw3uSUacEdHNnW4rXG0IQ8vZwMH87VOMoArJ3A==}
+  '@tomphttp/bare-server-node@2.0.4':
+    resolution: {integrity: sha512-vbzrsTgp71mfEcLMiuPb8CU+84CDdv2FwU/u9P+TatLd8ZEenffTwZyGvhWlwumDkXjrR56W5CMKZ5vlPTIqrA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -493,6 +493,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.18.0:
+    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
 snapshots:
 
   '@biomejs/biome@1.8.3':
@@ -556,7 +568,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.1.2': {}
 
-  '@tomphttp/bare-server-node@2.0.3':
+  '@tomphttp/bare-server-node@2.0.4':
     dependencies:
       async-exit-hook: 2.0.1
       commander: 10.0.1
@@ -564,7 +576,7 @@ snapshots:
       http-errors: 2.0.0
       ipaddr.js: 2.2.0
       source-map-support: 0.5.21
-      ws: 8.17.1
+      ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -940,3 +952,5 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.17.1: {}
+
+  ws@8.18.0: {}
