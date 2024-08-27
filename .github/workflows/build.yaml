@@ -9,14 +9,14 @@ jobs:
             - name: Use Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: "22.x.x"
+                  node-version: "latest"
+
+            - run: npm install -g npm
+            
+            - run: npm install pnpm
+
+            - run: pnpm add -g pnpm
 
             - run: sudo apt update
 
             - run: sudo apt upgrade -y
-
-            - run: npm install -g npm@10.8.1
-            
-            - run: npm install pnpm
-
-            - run: npm add -g pnpm@9.4.0

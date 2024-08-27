@@ -15,8 +15,8 @@ importers:
         specifier: ^3.2.7
         version: 3.2.7
       '@tomphttp/bare-server-node':
-        specifier: ^2.0.4
-        version: 2.0.4
+        specifier: 2.0.3
+        version: 2.0.3
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -117,8 +117,8 @@ packages:
   '@titaniumnetwork-dev/ultraviolet@3.2.7':
     resolution: {integrity: sha512-leR8Cxtgld9NykRbEbYejbD85dOLh0rqQe6tfcsaFEBIChWG9QF10x1qoJBQ3wXSvZ+wqh3cBNYrucYpHOWpUA==}
 
-  '@tomphttp/bare-server-node@2.0.4':
-    resolution: {integrity: sha512-vbzrsTgp71mfEcLMiuPb8CU+84CDdv2FwU/u9P+TatLd8ZEenffTwZyGvhWlwumDkXjrR56W5CMKZ5vlPTIqrA==}
+  '@tomphttp/bare-server-node@2.0.3':
+    resolution: {integrity: sha512-IGzZspDwzto+oPsvlV99OALJKH3X1nRWnpBE8EY6nrqu5I83xw3uSUacEdHNnW4rXG0IQ8vZwMH87VOMoArJ3A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -568,7 +568,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.7': {}
 
-  '@tomphttp/bare-server-node@2.0.4':
+  '@tomphttp/bare-server-node@2.0.3':
     dependencies:
       async-exit-hook: 2.0.1
       commander: 10.0.1
