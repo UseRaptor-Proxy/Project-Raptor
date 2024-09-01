@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import { createBareServer } from "@tomphttp/bare-server-node";
@@ -23,7 +24,7 @@ const CACHE_TTL = 30 * 24 * 60 * 60 * 1000; // Cache for 30 Days
 
 if (config.challenge !== false && process.env.challenge !== "false") {
   console.log(
-    chalk.green("🔒 Password protection is enabled! Listing logins below"),
+    chalk.green("🔒 Password protection is enabled! Listing logins below")
   );
   // biome-ignore lint/complexity/noForEach:
   Object.entries(config.users).forEach(([username, password]) => {
@@ -94,6 +95,32 @@ if (process.env.MASQR === "true") {
 }
 */
 
+const blocked = Object.keys(config.blocked);
+
+app.get("/assets/js/main.js", (req, res) => {
+  const hostname = req.hostname;
+  const main = path.join(__dirname, "static/assets/js/main.js");
+
+  try {
+    if (blocked.includes(hostname)) {
+      fs.readFile(main, "utf8", (err, data) => {
+        if (err) {
+          console.error("Error reading the file:", err);
+          return res.status(500).send("Something went wrong.");
+        }
+        const script = data.split("\n").slice(8).join("\n");
+        // console.log(`Rewriting for hostname: ${hostname}`);
+        res.type("application/javascript").send(script);
+      });
+    } else {
+      res.sendFile(main);
+    }
+  } catch (error) {
+    console.error("There was an error processing the script:", error);
+    res.status(500).send("Something went wrong.");
+  }
+});
+
 app.use(express.static(path.join(__dirname, "static")));
 app.use("/ov", cors({ origin: true }));
 
@@ -110,7 +137,7 @@ const routes = [
 ];
 
 // biome-ignore lint/complexity/noForEach:
-routes.forEach(route => {
+routes.forEach((route) => {
   app.get(route.path, (_req, res) => {
     res.sendFile(path.join(__dirname, "static", route.file));
   });
