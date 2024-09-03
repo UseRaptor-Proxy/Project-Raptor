@@ -29,9 +29,9 @@ function initializeBackground() {
   }
 }
 
-function setBackgroundImage(imageURL) {
-  document.body.style.backgroundImage = `url('${imageURL}')`;
-  document.querySelector("#background-input").value = imageURL;
+function setBackgroundImage(imageUrl) {
+  document.body.style.backgroundImage = `url('${imageUrl}')`;
+  document.querySelector("#background-input").value = imageUrl;
 }
 
 function handleFileChange(event) {
@@ -39,9 +39,9 @@ function handleFileChange(event) {
   if (fileInput.files?.[0]) {
     const reader = new FileReader();
     reader.onload = e => {
-      const imageURL = e.target.result;
-      localStorage.setItem("backgroundImage", imageURL);
-      setBackgroundImage(imageURL);
+      const imageUrl = e.target.result;
+      localStorage.setItem("backgroundImage", imageUrl);
+      setBackgroundImage(imageUrl);
     };
     reader.readAsDataURL(fileInput.files[0]);
   }
@@ -54,10 +54,10 @@ function resetBackground() {
 }
 
 function handleBackgroundSave() {
-  const imageURL = document.querySelector("#background-input").value;
-  if (imageURL.startsWith("https://")) {
-    localStorage.setItem("backgroundImage", imageURL);
-    setBackgroundImage(imageURL);
+  const imageUrl = document.querySelector("#background-input").value;
+  if (imageUrl.startsWith("https://")) {
+    localStorage.setItem("backgroundImage", imageUrl);
+    setBackgroundImage(imageUrl);
     document.querySelector("#background-input").value = "";
   } else {
     alert("Please enter a URL starting with 'https://'");
@@ -65,7 +65,7 @@ function handleBackgroundSave() {
 }
 
 // CSS Content Generator
-function generateCSSContent(themeData) {
+function generateCssContent(themeData) {
   let cssContent = ":root {";
   for (const [key, value] of Object.entries(themeData)) {
     if (value) {
@@ -156,7 +156,7 @@ function saveTheme() {
       document.querySelector("#placeholder-text-color-input").value || "#aaa",
   };
 
-  const cssContent = generateCSSContent(themeData);
+  const cssContent = generateCssContent(themeData);
   localStorage.setItem("themeCSS", cssContent);
 }
 
@@ -183,9 +183,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#black-button").addEventListener("click", resetBackground);
 
   document.querySelector("#white-button").addEventListener("click", () => {
-    const whiteBackgroundURL = "./assets/media/background/full-inverted.png";
-    localStorage.setItem("backgroundImage", whiteBackgroundURL);
-    setBackgroundImage(whiteBackgroundURL);
+    const whiteBackgroundUrl = "./assets/media/background/full-inverted.png";
+    localStorage.setItem("backgroundImage", whiteBackgroundUrl);
+    setBackgroundImage(whiteBackgroundUrl);
   });
 
   document
@@ -195,12 +195,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#save-theme").addEventListener("click", saveTheme);
 });
 
-function dataURItoBlob(dataURI) {
+function dataUrItoBlob(dataUri) {
   const byteString =
-    dataURI.split(",")[0].indexOf("base64") >= 0
-      ? atob(dataURI.split(",")[1])
-      : unescape(dataURI.split(",")[1]);
-  const mimeString = dataURI.split(",")[0].split(":")[1].split(";")[0];
+    dataUri.split(",")[0].indexOf("base64") >= 0
+      ? atob(dataUri.split(",")[1])
+      : unescape(dataUri.split(",")[1]);
+  const mimeString = dataUri.split(",")[0].split(":")[1].split(";")[0];
 
   const arrayBuffer = new ArrayBuffer(byteString.length);
   const ia = new Uint8Array(arrayBuffer);
@@ -465,7 +465,7 @@ function AB() {
       style.border = style.outline = "none";
       style.width = style.height = "100%";
 
-      const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL();
+      const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
       location.replace(pLink);
 
       const script = doc.createElement("script");
@@ -483,7 +483,7 @@ function AB() {
   }
 }
 
-function toggleAB() {
+function toggleAb() {
   const ab = localStorage.getItem("ab");
   if (!ab) {
     localStorage.setItem("ab", "true");
@@ -531,8 +531,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-function getRandomURL() {
-  const randomURLS = [
+function getRandomUrl() {
+  const randomUrls = [
     "https://kahoot.it",
     "https://classroom.google.com",
     "https://drive.google.com",
@@ -547,7 +547,7 @@ function getRandomURL() {
     "https://wikipedia.org",
     "https://dictionary.com",
   ];
-  return randomURLS[randRange(0, randomURLS.length)];
+  return randomUrls[randRange(0, randomUrls.length)];
 }
 
 function randRange(min, max) {

@@ -380,7 +380,7 @@ fetch(path)
     console.error("Error fetching JSON data:", error);
   });
 
-function show_category() {
+function showCategory() {
   const selectedCategories = Array.from(
     document.querySelectorAll("#category option:checked"),
   ).map(option => option.value);
@@ -400,7 +400,7 @@ function show_category() {
   }
 }
 
-function search_bar() {
+function searchBar() {
   const input = document.getElementById("searchbarbottom");
   const filter = input.value.toLowerCase();
   const games = document.getElementsByClassName("column");

@@ -95,28 +95,28 @@ document.addEventListener("DOMContentLoaded", event => {
       }
       Load();
     });
-    const GoURL = sessionStorage.getItem("GoUrl");
-    const URL = sessionStorage.getItem("URL");
+    const goUrl = sessionStorage.getItem("GoUrl");
+    const url = sessionStorage.getItem("URL");
 
     if (tabCounter === 0 || tabCounter === 1) {
-      if (GoURL !== null) {
-        if (GoURL.includes("/e/")) {
-          newIframe.src = window.location.origin + GoURL;
+      if (goUrl !== null) {
+        if (goUrl.includes("/e/")) {
+          newIframe.src = window.location.origin + goUrl;
         } else {
-          newIframe.src = `${window.location.origin}/a/${GoURL}`;
+          newIframe.src = `${window.location.origin}/a/${goUrl}`;
         }
       } else {
         newIframe.src = "/";
       }
     } else if (tabCounter > 1) {
-      if (URL !== null) {
-        newIframe.src = window.location.origin + URL;
+      if (url !== null) {
+        newIframe.src = window.location.origin + url;
         sessionStorage.removeItem("URL");
-      } else if (GoURL !== null) {
-        if (GoURL.includes("/e/")) {
-          newIframe.src = window.location.origin + GoURL;
+      } else if (goUrl !== null) {
+        if (goUrl.includes("/e/")) {
+          newIframe.src = window.location.origin + goUrl;
         } else {
-          newIframe.src = `${window.location.origin}/a/${GoURL}`;
+          newIframe.src = `${window.location.origin}/a/${goUrl}`;
         }
       } else {
         newIframe.src = "/";
@@ -290,10 +290,10 @@ function erudaToggle() {
 function FS() {
   const activeIframe = document.querySelector("#iframe-container iframe.active");
   if (activeIframe) {
-    if (!activeIframe.contentDocument.fullscreenElement) {
-      activeIframe.contentDocument.documentElement.requestFullscreen();
-    } else {
+    if (activeIframe.contentDocument.fullscreenElement) {
       activeIframe.contentDocument.exitFullscreen();
+    } else {
+      activeIframe.contentDocument.documentElement.requestFullscreen();
     }
   } else {
     console.error("No active iframe found");
@@ -331,22 +331,22 @@ function goForward() {
 }
 // Remove Nav
 document.addEventListener("DOMContentLoaded", () => {
-  const TB = document.getElementById("tabs-button");
-  const NB = document.getElementById("right-side-nav");
-  TB.addEventListener("click", () => {
+  const tb = document.getElementById("tabs-button");
+  const nb = document.getElementById("right-side-nav");
+  tb.addEventListener("click", () => {
     const activeIframe = document.querySelector("#iframe-container iframe.active");
-    if (NB.style.display === "none") {
-      NB.style.display = "";
+    if (nb.style.display === "none") {
+      nb.style.display = "";
       activeIframe.style.top = "10%";
       activeIframe.style.height = "90%";
-      TB.querySelector("i").classList.remove("fa-magnifying-glass-plus");
-      TB.querySelector("i").classList.add("fa-magnifying-glass-minus");
+      tb.querySelector("i").classList.remove("fa-magnifying-glass-plus");
+      tb.querySelector("i").classList.add("fa-magnifying-glass-minus");
     } else {
-      NB.style.display = "none";
+      nb.style.display = "none";
       activeIframe.style.top = "5%";
       activeIframe.style.height = "95%";
-      TB.querySelector("i").classList.remove("fa-magnifying-glass-minus");
-      TB.querySelector("i").classList.add("fa-magnifying-glass-plus");
+      tb.querySelector("i").classList.remove("fa-magnifying-glass-minus");
+      tb.querySelector("i").classList.add("fa-magnifying-glass-plus");
     }
   });
 });

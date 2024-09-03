@@ -40,7 +40,7 @@ if (
     doc.head.appendChild(link);
     doc.body.appendChild(iframe);
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL();
+    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
     location.replace(pLink);
 
     const script = doc.createElement("script");
@@ -193,8 +193,8 @@ SplashE.innerText = SplashT[SplashI];
 
 SplashE.addEventListener("click", US);
 // Random URL
-function getRandomURL() {
-  const randomURLS = [
+function getRandomUrl() {
+  const randomUrls = [
     "https://kahoot.it",
     "https://classroom.google.com",
     "https://drive.google.com",
@@ -209,7 +209,7 @@ function getRandomURL() {
     "https://wikipedia.org",
     "https://dictionary.com",
   ];
-  return randomURLS[randRange(0, randomURLS.length)];
+  return randomUrls[randRange(0, randomUrls.length)];
 }
 
 function randRange(min, max) {
