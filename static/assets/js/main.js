@@ -28,11 +28,7 @@ if (nav) {
       <a class="navbar-link" href="/./as"><i class="fa-solid fa-phone navbar-icon"></i><an>Ap</an><an>ps</an></a>
       <a class="navbar-link" href="/./ts"><i class="fa-solid fa-folder navbar-icon"></i><an>To</an><an>ols</an></a>
       <a class="navbar-link" href="/./em"><i class="fa-solid fa-gamepad navbar-icon"></i><an>Emul</an><an>ator</an></a>
-      ${
-        !(window.top.location.pathname === "/ta")
-          ? '<a class="navbar-link" href="/./ta"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'
-          : ""
-      }
+      ${window.top.location.pathname === "/ta" ? "" : '<a class="navbar-link" href="/./ta"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'}
       <a class="navbar-link" href="/./st"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>Set</an><an>tings</an></a>
     </div>`;
   nav.innerHTML = html;
@@ -70,29 +66,27 @@ window.addEventListener("load", () => {
     const blob = new Blob([cssContent], { type: "text/css" });
     console.debug("Blob:", blob);
     if (blob.size > 0) {
-      const blobURL = URL.createObjectURL(blob);
-      console.debug("Blob URL:", blobURL);
+      const blobUrl = URL.createObjectURL(blob);
+      console.debug("Blob URL:", blobUrl);
       const existingLink = document.getElementById("global");
       if (existingLink) {
-        existingLink.href = blobURL;
+        existingLink.href = blobUrl;
       } else {
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = blobURL;
+        link.href = blobUrl;
         link.id = "global";
         document.head.appendChild(link);
       }
       setTimeout(() => {
-        URL.revokeObjectURL(blobURL);
-        console.debug("Blob URL revoked:", blobURL);
+        URL.revokeObjectURL(blobUrl);
+        console.debug("Blob URL revoked:", blobUrl);
       }, 5000);
     } else {
       console.error("Blob is empty. Check the CSS content in localStorage.");
     }
   } else {
-    console.debug(
-      "No custom CSS content found in localStorage. Using defaults."
-    );
+    console.debug("No custom CSS content found in localStorage. Using defaults.");
   }
 });
 
@@ -107,18 +101,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const customIcon = localStorage.getItem("CustomIcon");
 
     let FinalNameValue = nameValue;
-    let FinalIconURL = iconUrl;
+    let finalIconUrl = iconUrl;
 
     if (customName) {
       FinalNameValue = customName;
     }
     if (customIcon) {
-      FinalIconURL = customIcon;
+      finalIconUrl = customIcon;
     }
 
-    if (FinalIconURL) {
-      icon.setAttribute("href", FinalIconURL);
-      localStorage.setItem("icon", FinalIconURL);
+    if (finalIconUrl) {
+      icon.setAttribute("href", finalIconUrl);
+      localStorage.setItem("icon", finalIconUrl);
     }
     if (FinalNameValue) {
       name.textContent = FinalNameValue;
@@ -325,15 +319,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Key
 document.addEventListener("DOMContentLoaded", () => {
-  const eventKey = JSON.parse(localStorage.getItem("eventKey")) || [
-    "Ctrl",
-    "E",
-  ];
-  const pLink =
-    localStorage.getItem("pLink") || "https://classroom.google.com/";
+  const eventKey = JSON.parse(localStorage.getItem("eventKey")) || ["Ctrl", "E"];
+  const pLink = localStorage.getItem("pLink") || "https://classroom.google.com/";
   let pressedKeys = [];
 
-  document.addEventListener("keydown", (event) => {
+  document.addEventListener("keydown", event => {
     pressedKeys.push(event.key);
     if (pressedKeys.length > eventKey.length) {
       pressedKeys.shift();

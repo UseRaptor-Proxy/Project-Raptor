@@ -22,9 +22,9 @@ const PORT = process.env.PORT || 8080;
 const cache = new Map();
 const CACHE_TTL = 30 * 24 * 60 * 60 * 1000; // Cache for 30 Days
 
-if (config.challenge !== false && process.env.challenge !== "false") {
+if (config.challenge !== false) {
   console.log(
-    chalk.green("🔒 Password protection is enabled! Listing logins below")
+    chalk.green("🔒 Password protection is enabled! Listing logins below"),
   );
   // biome-ignore lint/complexity/noForEach:
   Object.entries(config.users).forEach(([username, password]) => {
@@ -89,11 +89,10 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-/* 
-if (process.env.MASQR === "true") {
+/* if (process.env.MASQR === "true") {
+  console.log(chalk.green("Masqr is enabled"));
   setupMasqr(app);
-}
-*/
+} */
 
 const blocked = Object.keys(config.blocked);
 
@@ -133,11 +132,10 @@ const routes = [
   { path: "/", file: "index.html" },
   { path: "/tos", file: "tos.html" },
   { path: "/privacy", file: "privacy.html" },
-  { path: "/em", file: "emulator.html" },
 ];
 
 // biome-ignore lint/complexity/noForEach:
-routes.forEach((route) => {
+routes.forEach(route => {
   app.get(route.path, (_req, res) => {
     res.sendFile(path.join(__dirname, "static", route.file));
   });
