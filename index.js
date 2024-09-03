@@ -95,32 +95,6 @@ if (process.env.MASQR === "true") {
 }
 */
 
-const blocked = Object.keys(config.blocked);
-
-app.get("/assets/js/main.js", (req, res) => {
-  const hostname = req.hostname;
-  const main = path.join(__dirname, "static/assets/js/main.js");
-
-  try {
-    if (blocked.includes(hostname)) {
-      fs.readFile(main, "utf8", (err, data) => {
-        if (err) {
-          console.error("Error reading the file:", err);
-          return res.status(500).send("Something went wrong.");
-        }
-        const script = data.split("\n").slice(8).join("\n");
-        // console.log(`Rewriting for hostname: ${hostname}`);
-        res.type("application/javascript").send(script);
-      });
-    } else {
-      res.sendFile(main);
-    }
-  } catch (error) {
-    console.error("There was an error processing the script:", error);
-    res.status(500).send("Something went wrong.");
-  }
-});
-
 app.use(express.static(path.join(__dirname, "static")));
 app.use("/ov", cors({ origin: true }));
 
