@@ -89,10 +89,11 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-/* if (process.env.MASQR === "true") {
-  console.log(chalk.green("Masqr is enabled"));
+/*
+if (process.env.MASQR === "true") {
   setupMasqr(app);
-} */
+}
+*/
 
 const blocked = Object.keys(config.blocked);
 
@@ -132,6 +133,7 @@ const routes = [
   { path: "/", file: "index.html" },
   { path: "/tos", file: "tos.html" },
   { path: "/privacy", file: "privacy.html" },
+  { path: "/em", file: "emulator.html" },
 ];
 
 // biome-ignore lint/complexity/noForEach:

@@ -13,7 +13,7 @@ const nav = document.querySelector(".fixed-nav-bar");
 
 if (nav) {
   const themeId = localStorage.getItem("theme");
-  let LogoUrl = "/assets/media/favicon/main.png";
+  let LogoUrl = "/assets/media/favicon/main.png"; // Declare LogoUrl once
   if (themeId === "Inverted") {
     LogoUrl = "/assets/media/favicon/main-inverted.png";
   }
@@ -28,7 +28,7 @@ if (nav) {
       <a class="navbar-link" href="/./as"><i class="fa-solid fa-phone navbar-icon"></i><an>Ap</an><an>ps</an></a>
       <a class="navbar-link" href="/./ts"><i class="fa-solid fa-folder navbar-icon"></i><an>To</an><an>ols</an></a>
       <a class="navbar-link" href="/./em"><i class="fa-solid fa-gamepad navbar-icon"></i><an>Emul</an><an>ator</an></a>
-      ${window.top.location.pathname === "/ta" ? "" : '<a class="navbar-link" href="/./ta"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'}
+      ${!(window.top.location.pathname === "/ta") ? '<a class="navbar-link" href="/./ta"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>' : ""}
       <a class="navbar-link" href="/./st"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>Set</an><an>tings</an></a>
     </div>`;
   nav.innerHTML = html;
@@ -66,21 +66,21 @@ window.addEventListener("load", () => {
     const blob = new Blob([cssContent], { type: "text/css" });
     console.debug("Blob:", blob);
     if (blob.size > 0) {
-      const blobUrl = URL.createObjectURL(blob);
-      console.debug("Blob URL:", blobUrl);
+      const blobURL = URL.createObjectURL(blob);
+      console.debug("Blob URL:", blobURL);
       const existingLink = document.getElementById("global");
       if (existingLink) {
-        existingLink.href = blobUrl;
+        existingLink.href = blobURL;
       } else {
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = blobUrl;
+        link.href = blobURL;
         link.id = "global";
         document.head.appendChild(link);
       }
       setTimeout(() => {
-        URL.revokeObjectURL(blobUrl);
-        console.debug("Blob URL revoked:", blobUrl);
+        URL.revokeObjectURL(blobURL);
+        console.debug("Blob URL revoked:", blobURL);
       }, 5000);
     } else {
       console.error("Blob is empty. Check the CSS content in localStorage.");
@@ -101,18 +101,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const customIcon = localStorage.getItem("CustomIcon");
 
     let FinalNameValue = nameValue;
-    let finalIconUrl = iconUrl;
+    let FinalIconURL = iconUrl;
 
     if (customName) {
       FinalNameValue = customName;
     }
     if (customIcon) {
-      finalIconUrl = customIcon;
+      FinalIconURL = customIcon;
     }
 
-    if (finalIconUrl) {
-      icon.setAttribute("href", finalIconUrl);
-      localStorage.setItem("icon", finalIconUrl);
+    if (FinalIconURL) {
+      icon.setAttribute("href", FinalIconURL);
+      localStorage.setItem("icon", FinalIconURL);
     }
     if (FinalNameValue) {
       name.textContent = FinalNameValue;

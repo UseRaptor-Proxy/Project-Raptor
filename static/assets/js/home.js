@@ -40,7 +40,7 @@ if (
     doc.head.appendChild(link);
     doc.body.appendChild(iframe);
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
+    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomURL();
     location.replace(pLink);
 
     const script = doc.createElement("script");
@@ -172,16 +172,13 @@ document.addEventListener("DOMContentLoaded", event => {
 });
 // Splash texts
 const SplashT = [
-  "Over 8 Million Users since 2023",
-  "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
+  "Developed By JackGrounds and GlobalFun",
   "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
+  "JackGrounds is BACK!",
+  "Subscribe to my YouTube (@GlobalFun)",
+  "Subscribe to my Youtube (@JackGrounds)",
   "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
+  "Over 1 Million people use this site",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -196,8 +193,8 @@ SplashE.innerText = SplashT[SplashI];
 
 SplashE.addEventListener("click", US);
 // Random URL
-function getRandomUrl() {
-  const randomUrls = [
+function getRandomURL() {
+  const randomURLS = [
     "https://kahoot.it",
     "https://classroom.google.com",
     "https://drive.google.com",
@@ -212,7 +209,7 @@ function getRandomUrl() {
     "https://wikipedia.org",
     "https://dictionary.com",
   ];
-  return randomUrls[randRange(0, randomUrls.length)];
+  return randomURLS[randRange(0, randomURLS.length)];
 }
 
 function randRange(min, max) {

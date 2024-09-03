@@ -1,21 +1,21 @@
 :root {
-   /* Background Variables */
-   --background-color: #f91616; /* Main Background Color */
-   --background-nav: #f91616;
-   --background-input: #383737; /* Input Field Background Color */
-   --background-column: #f91616; /* Background for Apps Container */
-   --background-settings: #f91616; /* Settings Card Background */
-   --background-buttons: #7a7777; /* Button Background Color */
-   --tab-active-background: #585252; /* Accent Color for Tabs */
-   --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
-   --slider-active-background: #000000; /* Active Slider Background Color */
-   --slider-inactive-background: #a8a7a7; /* Slider Background Color */
-   --nav-image: url("/./assets/media/favicon/main-inverted.png"); /* Nav Logo */
-   --save-button: #a6d189; /* Save Button, Normally Green */
-   /* Text Variables */
-   --text-primary: #fef9f9; /* Primary Text Color */
-   --text-dark: #fdf9f9; /* Dark Text Color for Error Page, Scrollbar, and Particles */
-   --text-placeholder: #fdfcfc; /* Placeholder Text Color */
-   --option-disabled: #000000; /* Disabled Option Text Color */
-   /* Other Variables */
+  /* Background Variables */
+  --background-color: #f91616; /* Main Background Color */
+  --background-nav: #f91616;
+  --background-input: #383737; /* Input Field Background Color */
+  --background-column: #f91616; /* Background for Apps Container */
+  --background-settings: #f91616; /* Settings Card Background */
+  --background-buttons: #7a7777; /* Button Background Color */
+  --tab-active-background: #585252; /* Accent Color for Tabs */
+  --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
+  --slider-active-background: #000000; /* Active Slider Background Color */
+  --slider-inactive-background: #a8a7a7; /* Slider Background Color */
+  --nav-image: url("/./assets/media/favicon/main-inverted.png"); /* Nav Logo */
+  --save-button: #a6d189; /* Save Button, Normally Green */
+  /* Text Variables */
+  --text-primary: #fef9f9; /* Primary Text Color */
+  --text-dark: #fdf9f9; /* Dark Text Color for Error Page, Scrollbar, and Particles */
+  --text-placeholder: #fdfcfc; /* Placeholder Text Color */
+  --option-disabled: #000000; /* Disabled Option Text Color */
+  /* Other Variables */
 }

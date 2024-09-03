@@ -12,7 +12,7 @@ jobs:
                   node-version: "latest"
 
             - run: npm install -g npm
-            
+
             - run: npm install pnpm
 
             - run: sudo apt update
