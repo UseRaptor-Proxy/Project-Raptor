@@ -5,7 +5,7 @@
 </div>
 
 > [!IMPORTANT]
-> This is a fork of [Interstellar](https://github.com/UseInterstellar/Interstellar) project, consider giving it a star!
+> This is a modified fork of the [Interstellar](https://github.com/UseInterstellar/Interstellar) project, consider giving it a star and suport the developers.
 
 > [!IMPORTANT]
 > If you fork this project, consider giving it a star in the original repository!
