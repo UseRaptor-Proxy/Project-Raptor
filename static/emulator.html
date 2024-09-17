@@ -9,17 +9,18 @@
     <title id="tab-title">Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/global.css?v=6" />
-    <link rel="stylesheet" href="/assets/css/container.css?v=2" />
     <link rel="stylesheet" href="/assets/css/nav.css?v=2" />
+    <link rel="stylesheet" href="/assets/css/emulator.css?v=2" />
     <script src="/assets/js/index.js?v=46"></script>
   </head>
   <body>
     <div class="fixed-nav-bar"></div>
     <div class="input-container">
+      <button onclick="window.location.href='/./ab';" class="dropbtn">About Emulator</button>
       <input type="text" id="searchbarbottom" onkeyup="searchBar()" placeholder="Search" />
       <select id="category" name="category" onchange="showCategory()">
         <option value="all">All</option>
-        <option value="all">NES</option>
+        <option value="NES">NES</option>
       </select>
     </div>
     <div class="pinned-apps"></div>

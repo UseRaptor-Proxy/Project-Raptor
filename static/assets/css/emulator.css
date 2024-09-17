@@ -1,3 +1,19 @@
+.dropbtn {
+   padding: 20px;
+   width: 200px;
+   border-radius: 5px;
+   background: var(--background-column);
+   text-align: center;
+   font-size: 20px;
+   border: none;
+   outline: none;
+   color: var(--text-primary);
+   transition: 0.4s;
+   padding: 16px;
+   cursor: pointer;
+   height: 64px;
+}
+
 .column {
    width: 145px;
    transition: all 0.2s ease;
@@ -24,7 +40,7 @@
    height: 19px;
    font-style: normal;
    font-weight: 800;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 19px;
    text-align: center;
    color: var(--text-primary);

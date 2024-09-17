@@ -13,7 +13,7 @@ jobs:
 
             - run: npm install -g npm
 
-            - run: npm install pnpm
+            - run: npm install -g pnpm
 
             - run: sudo apt update
 

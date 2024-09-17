@@ -77,7 +77,3 @@ body {
    position: absolute;
    z-index: 99;
 }
-
-option:disabled {
-   color: var(--option-disabled);
-}
