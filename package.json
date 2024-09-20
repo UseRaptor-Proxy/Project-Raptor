@@ -19,13 +19,13 @@
     "@titaniumnetwork-dev/ultraviolet": "^3.2.7",
     "@nebula-services/bare-server-node": "^2.0.4",
     "chalk": "^5.3.0",
-	  "cookie-parser": "^1.4.6",
-	  "cors": "^2.8.5",
-	  "dotenv": "^16.4.5",
-	  "express": "^4.21.0",
-	  "express-basic-auth": "^1.2.1",
-	  "mime": "^4.0.4",
-	  "node-fetch": "^3.3.2"
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-basic-auth": "^1.2.1",
+    "mime": "^4.0.4",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.2"
