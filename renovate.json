@@ -12,10 +12,11 @@
       "ignoreTests": true
     },
     "packageRules": [
-    {
-      "matchPackageNames": ["*"],
-      "automerge": true,
-      "ignoreTests": true
-    }
-  ]
+        {
+          "matchPackageNames": ["*"],
+          "automerge": true,
+          "ignoreTests": true
+        }
+    ],
+    "dependencyDashboard": true
 }
