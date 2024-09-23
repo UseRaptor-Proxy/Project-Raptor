@@ -107,8 +107,8 @@ packages:
   '@fastify/http-proxy@10.0.0':
     resolution: {integrity: sha512-n5/EPspNKtzpCUavuDflYtvtB+aEkablb2sZM83gDKbxM9GF+93maJYQrGozJ2HNRqpt7wfzsDeUuGVFFkYzMQ==}
 
-  '@fastify/reply-from@11.0.0':
-    resolution: {integrity: sha512-dv3o8hyy4sxhg1RN9l6ueM+PMMaIPKLjtL2T99H5M7h1Xt8d1RX3r+xC+sL5AqJqLvReX4N+7mTq9QDeB8i6Lg==}
+  '@fastify/reply-from@11.0.1':
+    resolution: {integrity: sha512-F2Qk88gcqIIiug9V+4I6WeeV1faj1Wu798JyOnwbJcjQhm4LYrHdkpFSVwJE0g1cVjYCFFmH3OVh1HHaninttQ==}
 
   '@nebula-services/bare-server-node@2.0.4':
     resolution: {integrity: sha512-Jcr+QtkLJVmppdbBarEbRp1TtCsL4pjFIcX6+KPURRqcsOP7hZfYclhjmCserwEC7jT+WBduXpFd3qwqeRBNew==}
@@ -259,8 +259,8 @@ packages:
   fastify-plugin@4.5.1:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
 
-  fastify-plugin@5.0.0:
-    resolution: {integrity: sha512-0725fmH/yYi8ugsjszLci+lLnGBK6cG+WSxM7edY2OXJEU7gr2JiGBoieL2h9mhTych1vFsEfXsAsGGDJ/Rd5w==}
+  fastify-plugin@5.0.1:
+    resolution: {integrity: sha512-HCxs+YnRaWzCl+cWRYFnHmeRFyR5GVnJTAaCJQiYzQSDwK9MgJdyAsuL3nh0EWRCYMgQ5MeziymvmAhUHYHDUQ==}
 
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
@@ -538,15 +538,15 @@ snapshots:
 
   '@fastify/http-proxy@10.0.0':
     dependencies:
-      '@fastify/reply-from': 11.0.0
+      '@fastify/reply-from': 11.0.1
       fast-querystring: 1.1.2
-      fastify-plugin: 5.0.0
+      fastify-plugin: 5.0.1
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@fastify/reply-from@11.0.0':
+  '@fastify/reply-from@11.0.1':
     dependencies:
       '@fastify/error': 4.0.0
       end-of-stream: 1.4.4
@@ -727,7 +727,7 @@ snapshots:
 
   fastify-plugin@4.5.1: {}
 
-  fastify-plugin@5.0.0: {}
+  fastify-plugin@5.0.1: {}
 
   fetch-blob@3.2.0:
     dependencies:
