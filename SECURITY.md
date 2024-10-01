@@ -6,8 +6,13 @@ Only current versions of the site are being updated, if you are using an older v
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2.X.X   | :white_check_mark: |
-| 1.X.X   | :x:                |
+| 2.6.x   | :white_check_mark: |
+| 2.5.x   | :x:                |
+| 2.4.x   | :x:                |
+| 2.3.x   | :x:                |
+| 2.2.x   | :x:                |
+| 2.x.x   | :x:                |
+| 1.x.x   | :x:                |
 
 ## Reporting a Vulnerability
 
