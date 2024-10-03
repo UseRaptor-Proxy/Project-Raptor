@@ -11,8 +11,6 @@ Only current versions of the site are being updated, if you are using an older v
 | 2.4.x   | :x:                |
 | 2.3.x   | :x:                |
 | 2.2.x   | :x:                |
-| 2.x.x   | :x:                |
-| 1.x.x   | :x:                |
 
 ## Reporting a Vulnerability
 
