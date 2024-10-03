@@ -1,6 +1,12 @@
 [
   {
-    "name": "! [NEW] Request An App",
+    "name": "! Create Custom App",
+    "image": "/assets/media/icons/custom.webp",
+    "categories": ["all"],
+    "custom": "true"
+  },
+  {
+    "name": "! [NEW] Request A Game",
     "link": "https://form.jotform.com/240043772556153",
     "image": "/assets/media/icons/request.webp",
     "categories": ["all"]
@@ -669,12 +675,6 @@
     "name": "Subway Surfers: San Francisco ",
     "link": "https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
     "image": "/assets/media/icons/SF.webp",
-    "categories": ["all,", "emu"]
-  },
-  {
-    "name": "Super Mario Bros",
-    "link": "https://topoi.pooq.com/hendrik/notmine/FullScreenMario/mario.html",
-    "image": "/assets/media/icons/SMB.webp",
     "categories": ["all,", "emu"]
   },
   {

@@ -1,6 +1,6 @@
 {
   "name": "Project-Raptor",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "type": "module",
   "engines": {
     "npm": ">=10.0.0",
