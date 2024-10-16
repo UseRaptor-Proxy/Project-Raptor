@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@fastify/http-proxy':
-        specifier: ^10.0.1
+        specifier: ^10.0.0
         version: 10.0.1
       '@nebula-services/bare-server-node':
         specifier: ^2.0.4
