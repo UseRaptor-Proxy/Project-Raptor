@@ -8,28 +8,28 @@
     <link rel="shortcut icon" id="tab-favicon" href="favicon.png" />
     <title id="t">Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/global.css?v=6" />
-    <link rel="stylesheet" href="/assets/css/emulator.css?v=2" />
-    <link rel="stylesheet" href="/assets/css/nav.css?v=01" />
-    <script src="/assets/js/i.js?v=02"></script>
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/emulator.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <script src="/assets/js/i.js"></script>
   </head>
   <body>
-    <div class="fixed-nav-bar"></div>
-    <div class="input-container">
+    <div class="f-nav"></div>
+    <div class="input-c">
       <button onclick="window.location.href='/./ab';" class="dropbtn">About Emulator</button>
-      <input type="text" id="searchbarbottom" onkeyup="searchBar()" placeholder="Search" />
-      <select id="category" name="category" onchange="showCategory()">
-        <option value="all">All</option>
+      <input type="text" id="search" onkeyup="bar()" placeholder="Search" />
+      <select id="category" name="category" onchange="category()">
+        <option value="all">&#65;&#108;&#108;</option>
         <option value="NES">NES</option>
       </select>
     </div>
-    <div class="pinned-apps"></div>
-    <div class="container-apps"></div>
-    <script src="/assets/js/c.js?v=02"></script>
-    <script src="./assets/ultra/bundle.js?v=10-02-2024"></script>
-    <script src="./assets/ultra/config.js?v=10-02-2024"></script>
+    <div class="pinned"></div>
+    <div class="apps"></div>
+    <script src="/assets/js/c.js"></script>
+    <script src="./assets/ultra/bundle.js"></script>
+    <script src="./assets/ultra/config.js"></script>
     <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
-    <script src="/assets/js/m.js?v=01"></script>
+    <script src="/assets/js/m.js"></script>
     <!-- DO NOT REMOVE-->
     <script>
       window.dataLayer = window.dataLayer || [];

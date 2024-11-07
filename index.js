@@ -105,8 +105,6 @@ const routes = [
   { path: "/rx", file: "tabs.html" },
   { path: "/gt", file: "tools.html" },
   { path: "/", file: "index.html" },
-  { path: "/tos", file: "tos.html" },
-  { path: "/privacy", file: "privacy.html" },
   { path: "/em", file: "emulator.html" },
   { path: "/ab", file: "about.html" },
 ];

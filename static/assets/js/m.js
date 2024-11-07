@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Nav
-const nav = document.querySelector(".fixed-nav-bar");
+const nav = document.querySelector(".f-nav");
 
 if (nav) {
   const themeId = localStorage.getItem("theme");
@@ -21,7 +21,7 @@ if (nav) {
 <div id="icon-container">
     <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
 </div>
-<div class="fixed-nav-bar-right">
+<div class="f-nav-right">
     <a class="navbar-link" href="/./up"><i class="fa-solid fa-trophy navbar-icon"></i><an>Ga</an><an>mes</an></a>
       <a class="navbar-link" href="/./yz"><i class="fa-solid fa-phone navbar-icon"></i><an>Ap</an><an>ps</an></a>
       <a class="navbar-link" href="/./gt"><i class="fa-solid fa-folder navbar-icon"></i><an>To</an><an>ols</an></a>
@@ -38,13 +38,13 @@ const themeEle = document.createElement("link");
 themeEle.rel = "stylesheet";
 
 const themes = {
-  catppuccinMocha: "/assets/css/themes/catppuccin/mocha.css?v=4",
-  catppuccinMacchiato: "/assets/css/themes/catppuccin/macchiato.css?v=4",
-  catppuccinFrappe: "/assets/css/themes/catppuccin/frappe.css?v=4",
-  catppuccinLatte: "/assets/css/themes/catppuccin/latte.css?v=4",
-  Inverted: "/assets/css/themes/colors/inverted.css?v=4",
-  sky: "/assets/css/themes/colors/sky.css?v=4",
-  jack: "/assets/css/themes/colors/jack.css?v=4",
+  catppuccinMocha: "/assets/css/themes/catppuccin/mocha.css",
+  catppuccinMacchiato: "/assets/css/themes/catppuccin/macchiato.css",
+  catppuccinFrappe: "/assets/css/themes/catppuccin/frappe.css",
+  catppuccinLatte: "/assets/css/themes/catppuccin/latte.css",
+  Inverted: "/assets/css/themes/colors/inverted.css",
+  sky: "/assets/css/themes/colors/sky.css",
+  jack: "/assets/css/themes/colors/jack.css",
 };
 
 if (themes[themeid]) {
@@ -56,7 +56,6 @@ if (themes[themeid]) {
   document.head.appendChild(customThemeEle);
 }
 
-// Tab Cloaker
 document.addEventListener("DOMContentLoaded", () => {
   const icon = document.getElementById("tab-favicon");
   const name = document.getElementById("t");
