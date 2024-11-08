@@ -253,6 +253,7 @@ if (g) {
   path = "/assets/json/a.min.json";
 } else if (e) {
   path = "/assets/json/e.min.json";
+  //path = "https://emulator-games.pages.dev/Nes.json";
 }
 fetch(path)
   .then(response => {

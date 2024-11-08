@@ -3,7 +3,7 @@
     "name": "! [NEW] Request An App",
     "link": "https://form.jotform.com/240043772556153",
     "image": "/assets/media/icons/request.webp",
-    "categories": ["all", "NES"]
+    "categories": ["all", "NES", "PS"]
   },
   {
     "name": "Super Mario Bros.",
@@ -180,9 +180,15 @@
     "categories": ["all", "NES"]
   },
   {
-    "name": "720 Degrees",
+    "name": "10-Yard Fight",
     "link": "https://emulator-games.pages.dev/nes/10-Yard Fight",
     "image": "/assets/media/icons/emulator/nes/10yf.webp",
     "categories": ["all", "NES"]
+  },
+  {
+    "name": "007 - The World Is Not Enough",
+    "link": "https://emulator-games.pages.dev/ps/007 - The World Is Not Enough",
+    "image": "/assets/media/icons/emulator/ps/007tw.webp",
+    "categories": ["all", "PS"]
   }
 ]
