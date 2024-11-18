@@ -490,8 +490,8 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  undici@6.20.1:
-    resolution: {integrity: sha512-AjQF1QsmqfJys+LXfGTNum+qw4S88CojRInG/6t31W/1fk6G59s92bnAvGz5Cmur+kQv2SURXEvvudLmbrE8QA==}
+  undici@6.21.0:
+    resolution: {integrity: sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==}
     engines: {node: '>=18.17'}
 
   unpipe@1.0.0:
@@ -582,7 +582,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 4.5.1
       toad-cache: 3.7.0
-      undici: 6.20.1
+      undici: 6.21.0
 
   '@mercuryworkshop/bare-mux@2.1.6': {}
 
@@ -985,7 +985,7 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  undici@6.20.1: {}
+  undici@6.21.0: {}
 
   unpipe@1.0.0: {}
 
