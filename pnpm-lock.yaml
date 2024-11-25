@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@fastify/http-proxy':
-        specifier: ^10.0.2
+        specifier: ^10.0.0
         version: 10.0.2
       '@nebula-services/bare-server-node':
         specifier: ^2.0.4
@@ -110,8 +110,8 @@ packages:
   '@fastify/reply-from@11.0.2':
     resolution: {integrity: sha512-VcHhe01PsHuVX2eVrkoskCs+pwNPgVfOOpwQJnSo3AwIKtISm0VCFB7bycQjHfxAuPYgkrI6ZvYoovdHx4sVMA==}
 
-  '@mercuryworkshop/bare-mux@2.1.6':
-    resolution: {integrity: sha512-SMpPwHrRjeqBfuh5N9SKD2G7uzfQiOeiENcYjb0BYTpOEOFvoPDhjSppSZMSkN1maJJ1NNtCRv9Qb+uCeJWwgw==}
+  '@mercuryworkshop/bare-mux@2.1.7':
+    resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
 
   '@nebula-services/bare-server-node@2.0.4':
     resolution: {integrity: sha512-Jcr+QtkLJVmppdbBarEbRp1TtCsL4pjFIcX6+KPURRqcsOP7hZfYclhjmCserwEC7jT+WBduXpFd3qwqeRBNew==}
@@ -581,7 +581,7 @@ snapshots:
       toad-cache: 3.7.0
       undici: 6.21.0
 
-  '@mercuryworkshop/bare-mux@2.1.6': {}
+  '@mercuryworkshop/bare-mux@2.1.7': {}
 
   '@nebula-services/bare-server-node@2.0.4':
     dependencies:
@@ -598,7 +598,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.6
+      '@mercuryworkshop/bare-mux': 2.1.7
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.0
