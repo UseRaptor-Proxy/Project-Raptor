@@ -15,7 +15,7 @@
   "author": "Project-Raptor",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@fastify/http-proxy": "^11.0.0",
+    "@fastify/http-proxy": "^11.1.1",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.7",
     "@nebula-services/bare-server-node": "^2.0.4",
     "chalk": "^5.3.0",
