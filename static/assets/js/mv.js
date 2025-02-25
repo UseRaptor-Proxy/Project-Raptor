@@ -1,11 +1,23 @@
+let qp;
+
+try {
+  qp = window.top.location.pathname === "/rx";
+} catch {
+  try {
+    qp = window.parent.location.pathname === "/rx";
+  } catch {
+    qp = false;
+  }
+}
+
 // Dynamic
 document.addEventListener("DOMContentLoaded", () => {
-  if (
+  /*if (
     localStorage.getItem("dy") === null ||
     localStorage.getItem("dy") === undefined
   ) {
     localStorage.setItem("dy", "false");
-  }
+  }*/
 });
 
 // Nav
@@ -26,7 +38,11 @@ if (nav) {
       <a class="navbar-link" href="/./yz"><i class="fa-solid fa-phone navbar-icon"></i><an>Ap</an><an>ps</an></a>
       <a class="navbar-link" href="/./gt"><i class="fa-solid fa-folder navbar-icon"></i><an>To</an><an>ols</an></a>
       <a class="navbar-link" href="/./em"><i class="fa-solid fa-gamepad navbar-icon"></i><an>Emul</an><an>ator</an></a>
-      ${window.top.location.pathname === "/rx" ? "" : '<a class="navbar-link" href="/./rx"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'}
+      ${
+        window.top.location.pathname === "/rx"
+          ? ""
+          : '<a class="navbar-link" href="/./rx"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'
+      }
       <a class="navbar-link" href="/./vk"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>Set</an><an>tings</an></a>
 </div>`;
   nav.innerHTML = html;
@@ -284,11 +300,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Key
 document.addEventListener("DOMContentLoaded", () => {
-  const eventKey = JSON.parse(localStorage.getItem("eventKey")) || ["Ctrl", "E"];
-  const pLink = localStorage.getItem("pLink") || "https://classroom.google.com/";
+  const eventKey = JSON.parse(localStorage.getItem("eventKey")) || [
+    "Ctrl",
+    "E",
+  ];
+  const pLink =
+    localStorage.getItem("pLink") || "https://classroom.google.com/";
   let pressedKeys = [];
 
-  document.addEventListener("keydown", event => {
+  document.addEventListener("keydown", (event) => {
     pressedKeys.push(event.key);
     if (pressedKeys.length > eventKey.length) {
       pressedKeys.shift();

@@ -162,12 +162,19 @@ function ResetCustomCloak() {
 
 function redirectToMainDomain() {
   const currentUrl = window.location.href;
+  const target = mainDomainUrl + window.location.pathname;
   const mainDomainUrl = currentUrl.replace(/\/[^\/]*$/, "");
   if (window !== top) {
-    top.location.href = mainDomainUrl + window.location.pathname;
-  } else {
-    window.location.href = mainDomainUrl + window.location.pathname;
-  }
+    try {
+      top.location.href = target;
+    } catch {
+      try {
+        parent.location.href = target;
+      } catch {
+        window.location.href = target;
+      }
+    }
+  } else window.location.href = mainDomainUrl + window.location.pathname;
 }
 
 document.addEventListener("DOMContentLoaded", event => {

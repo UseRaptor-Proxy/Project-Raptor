@@ -4,6 +4,18 @@ window.addEventListener("load", () => {
   });
 });
 
+let xl;
+
+try {
+  xl = window.top.location.pathname === "/rx";
+} catch {
+  try {
+    xl = window.parent.location.pathname === "/rx";   
+  } catch {
+    xl = false;
+  }
+}
+
 const form = document.getElementById("fv");
 const input = document.getElementById("iv");
 

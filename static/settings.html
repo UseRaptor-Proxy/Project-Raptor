@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="/assets/css/container.css" />
     <link rel="stylesheet" href="/assets/css/nav.css" />
     <link rel="stylesheet" href="/assets/css/settings.css" />
-    <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1237c86ba0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="f-nav"></div>
@@ -21,7 +24,8 @@
         <div class="settings-card">
           <h3>About:Blank</h3>
           <p>
-            Cloak the site in an about:blank page and toggle about:blank on startup (enabled by default)
+            Cloak the site in an about:blank page and toggle about:blank on
+            startup (enabled by default)
           </p>
           <div id="ab-settings">
             <div id="ab-settings-container">
@@ -30,7 +34,8 @@
                   type="checkbox"
                   id="ab-settings-switch"
                   class="slider-checkbox"
-                  onchange="toggleAB()"/>
+                  onchange="toggleAB()"
+                />
                 <span class="slider-round"></span>
               </label>
             </div>
@@ -44,9 +49,22 @@
             about:blank is opened. For multiple key strokes separate them with a
             comma. Ex. "A,B,C"
           </p>
-          <input type="text" id="eventKeyInput" placeholder="Panic Keys (comma separated)" class="key-form"/>
-          <input class="key-form" placeholder="Panic Link" type="text" id="linkInput" value />
-          <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
+          <input
+            type="text"
+            id="eventKeyInput"
+            placeholder="Panic Keys (comma separated)"
+            class="key-form"
+          />
+          <input
+            class="key-form"
+            placeholder="Panic Link"
+            type="text"
+            id="linkInput"
+            value
+          />
+          <button class="key-button" value="Save" onclick="saveEventKey()">
+            Save
+          </button>
         </div>
         <div class="settings-card">
           <h3>&#84;&#97;&#98;&#32;&#67;&#108;&#111;&#97;&#107;&#101;&#114;</h3>
@@ -75,35 +93,63 @@
             <option value="Britannica">Britannica</option>
             <option value="Ducksters">Ducksters</option>
             <option value="Minga">Minga</option>
-            <option value="i-Ready Learning Games">i-Ready Learning Games</option>
+            <option value="i-Ready Learning Games">
+              i-Ready Learning Games
+            </option>
             <option value="NoRedInk Home">NoRedInk Home</option>
             <option value="Newsela Binder">Newsela Binder</option>
             <option value="Newsela Assignments">Newsela Assignments</option>
             <option value="Newsela Home">Newsela Home</option>
             <option value="PowerSchool Sign In">PowerSchool Sign In</option>
-            <option value="PowerSchool Grades and Attendance">PowerSchool Grades and Attendance</option>
-            <option value="PowerSchool Teacher Comments">PowerSchool Teacher Comments</option>
-            <option value="PowerSchool Standards Grades">PowerSchool Standards Grades</option>
-            <option value="PowerSchool Attendance">PowerSchool Attendance</option>
+            <option value="PowerSchool Grades and Attendance">
+              PowerSchool Grades and Attendance
+            </option>
+            <option value="PowerSchool Teacher Comments">
+              PowerSchool Teacher Comments
+            </option>
+            <option value="PowerSchool Standards Grades">
+              PowerSchool Standards Grades
+            </option>
+            <option value="PowerSchool Attendance">
+              PowerSchool Attendance
+            </option>
             <option value="Nearpod">Nearpod</option>
             <option value="StudentVUE">StudentVUE</option>
             <option value="Quizlet Home">Quizlet Home</option>
-            <option value="Google Forms Locked Mode">Google Forms - Locked Mode</option>
+            <option value="Google Forms Locked Mode">
+              Google Forms - Locked Mode
+            </option>
             <option value="DeltaMath">DeltaMath</option>
             <option value="Kami">Kami</option>
-            <option value="GoGuardian Admin Restricted">GoGuardian Admin Block</option>
-            <option value="GoGuardian Teacher Block">GoGuardian Teacher Block</option>
-            <option value="World History Encyclopedia">World History Encyclopedia</option>
+            <option value="GoGuardian Admin Restricted">
+              GoGuardian Admin Block
+            </option>
+            <option value="GoGuardian Teacher Block">
+              GoGuardian Teacher Block
+            </option>
+            <option value="World History Encyclopedia">
+              World History Encyclopedia
+            </option>
             <option value="Big Ideas Math">Big Ideas Math</option>
-            <option value="Big Ideas Math Assignment Player">Big Ideas Math Assignment Player</option>
+            <option value="Big Ideas Math Assignment Player">
+              Big Ideas Math Assignment Player
+            </option>
             <option value="Savvas Realize">Savvas Realize</option>
             <option value="SmartPass">SmartPass</option>
-            <option value="World Book Online - Super Home">World Book Online (Super Home)</option>
-            <option value="World Book Online - Student">World Book Online (Student)</option>
-            <option value="World Book Online - Timelines">World Book Online (Timelines)</option>
+            <option value="World Book Online - Super Home">
+              World Book Online (Super Home)
+            </option>
+            <option value="World Book Online - Student">
+              World Book Online (Student)
+            </option>
+            <option value="World Book Online - Timelines">
+              World Book Online (Timelines)
+            </option>
             <option value="Naviance">Naviance Student</option>
             <option value="PBS Learning Media">PBS Learning Media</option>
-            <option value="PBS Learning Media Student Home">PBS Learning Media Student Home</option>
+            <option value="PBS Learning Media Student Home">
+              PBS Learning Media Student Home
+            </option>
             <option value="Dictionary">Dictionary.com</option>
             <option value="Thesaurus">Thesaurus.com</option>
           </select>
@@ -111,13 +157,15 @@
             <button
               class="key-button"
               value="Save"
-              onclick="CustomIcon(); CustomName(); redirectToMainDomain();">
+              onclick="CustomIcon(); CustomName(); redirectToMainDomain();"
+            >
               Save
             </button>
             <button
               class="key-button"
               value="Reset"
-              onclick="ResetCustomCloak(); redirectToMainDomain();">
+              onclick="ResetCustomCloak(); redirectToMainDomain();"
+            >
               Reset Cloak
             </button>
           </div>
@@ -125,7 +173,12 @@
         <div class="settings-card">
           <h3>Set Background Image</h3>
           <p>Change the site's background image.</p>
-          <input class="key-form" type="text" id="background-input" placeholder="Enter image URL" />
+          <input
+            class="key-form"
+            type="text"
+            id="background-input"
+            placeholder="Enter image URL"
+          />
           <button class="key-button" id="save-button">Save</button>
           <button class="key-button" id="reset-button">Reset</button>
         </div>
@@ -204,7 +257,7 @@
         </div>
       </div>
     </div>
-    <script src="/assets/js/m.js"></script>
+    <script src="/assets/js/mv.js"></script>
     <script src="/assets/js/settings.js"></script>
     <!-- DO NOT REMOVE-->
     <script>
