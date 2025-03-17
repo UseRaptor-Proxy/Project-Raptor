@@ -101,8 +101,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fastify/error@4.0.0':
-    resolution: {integrity: sha512-OO/SA8As24JtT1usTUTKgGH7uLvhfwZPwlptRi2Dp5P4KKmJI3gvsZ8MIHnNwDs4sLf/aai5LzTyl66xr7qMxA==}
+  '@fastify/error@4.1.0':
+    resolution: {integrity: sha512-KeFcciOr1eo/YvIXHP65S94jfEEqn1RxTRBT1aJaHxY5FK0/GDXYozsQMMWlZoHgi8i0s+YtrLsgj/JkUUjSkQ==}
 
   '@fastify/http-proxy@11.1.2':
     resolution: {integrity: sha512-DDceCz1DIEa4vUsQ0DhMqwiZdZUCG0RByY51k0BndBLo7bWpO3QuzLpZTS7Hr6Bp6r82SRmAinM0uPpQse1zqA==}
@@ -505,8 +505,8 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  undici@7.4.0:
-    resolution: {integrity: sha512-PUQM3/es3noM24oUn10u3kNNap0AbxESOmnssmW+dOi9yGwlUSi5nTNYl3bNbTkWOF8YZDkx2tCmj9OtQ3iGGw==}
+  undici@7.5.0:
+    resolution: {integrity: sha512-NFQG741e8mJ0fLQk90xKxFdaSM7z4+IQpAgsFI36bCDY9Z2+aXXZjVy2uUksMouWfMI9+w5ejOq5zYYTBCQJDQ==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -577,7 +577,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@fastify/error@4.0.0': {}
+  '@fastify/error@4.1.0': {}
 
   '@fastify/http-proxy@11.1.2':
     dependencies:
@@ -591,13 +591,13 @@ snapshots:
 
   '@fastify/reply-from@12.0.2':
     dependencies:
-      '@fastify/error': 4.0.0
+      '@fastify/error': 4.1.0
       end-of-stream: 1.4.4
       fast-content-type-parse: 2.0.1
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       toad-cache: 3.7.0
-      undici: 7.4.0
+      undici: 7.5.0
 
   '@mercuryworkshop/bare-mux@2.1.7': {}
 
@@ -1018,7 +1018,7 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  undici@7.4.0: {}
+  undici@7.5.0: {}
 
   unpipe@1.0.0: {}
 
