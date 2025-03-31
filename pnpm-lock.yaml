@@ -107,8 +107,8 @@ packages:
   '@fastify/http-proxy@11.1.2':
     resolution: {integrity: sha512-DDceCz1DIEa4vUsQ0DhMqwiZdZUCG0RByY51k0BndBLo7bWpO3QuzLpZTS7Hr6Bp6r82SRmAinM0uPpQse1zqA==}
 
-  '@fastify/reply-from@12.0.2':
-    resolution: {integrity: sha512-S37oj8HMA1zOzkI5cZx3OYlB3wOiuSRMmr3aeBuRdW0EuP/TGo0/3iq8yGHfsjgvEP0dH/THkCkC/+QIRxOMzQ==}
+  '@fastify/reply-from@12.1.0':
+    resolution: {integrity: sha512-5SvMj0NnAAhno/MIv+bErCfzYxcqTueqUxCyub/i+68/CqYWroYg0/p8D0ZhrSQcDigowaKk+MEQSoLjbGwZ+g==}
 
   '@mercuryworkshop/bare-mux@2.1.7':
     resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
@@ -505,8 +505,8 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  undici@7.5.0:
-    resolution: {integrity: sha512-NFQG741e8mJ0fLQk90xKxFdaSM7z4+IQpAgsFI36bCDY9Z2+aXXZjVy2uUksMouWfMI9+w5ejOq5zYYTBCQJDQ==}
+  undici@7.6.0:
+    resolution: {integrity: sha512-gaFsbThjrDGvAaD670r81RZro/s6H2PVZF640Qn0p5kZK+/rim7/mmyfp2W7VB5vOMaFM8vuFBJUaMlaZTYHlA==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -581,7 +581,7 @@ snapshots:
 
   '@fastify/http-proxy@11.1.2':
     dependencies:
-      '@fastify/reply-from': 12.0.2
+      '@fastify/reply-from': 12.1.0
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       ws: 8.18.1
@@ -589,7 +589,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@fastify/reply-from@12.0.2':
+  '@fastify/reply-from@12.1.0':
     dependencies:
       '@fastify/error': 4.1.0
       end-of-stream: 1.4.4
@@ -597,7 +597,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       toad-cache: 3.7.0
-      undici: 7.5.0
+      undici: 7.6.0
 
   '@mercuryworkshop/bare-mux@2.1.7': {}
 
@@ -1018,7 +1018,7 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  undici@7.5.0: {}
+  undici@7.6.0: {}
 
   unpipe@1.0.0: {}
 
