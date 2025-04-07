@@ -36,7 +36,7 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       mime:
-        specifier: ^4.0.7
+        specifier: ^4.0.4
         version: 4.0.7
       node-fetch:
         specifier: ^3.3.2
@@ -352,8 +352,8 @@ packages:
     resolution: {integrity: sha512-Snk314V5ayFLhp3fkUREub6WtjBfPdCPY1Ln8/8munuLuiYhsABgBVWsozAG+MWMbVEvcdcpbi9R7ww22l9Q3g==}
     engines: {node: '>=18'}
 
-  meriyah@6.0.5:
-    resolution: {integrity: sha512-SrMqQCox7TTwtftWKHy/ZaVe+ZRpRl20pAgDo+PS9hzcAJrMjYsBJQPPiLXTnjztrqdfGS+Zz99r6Bwvydta1w==}
+  meriyah@6.0.6:
+    resolution: {integrity: sha512-jXJ2Hn1sLcge9QypNdZwbl/GqF5Qdc46TJA20g9KFa4ZnxQx74bDlJ3RfdaFhUIU3yN0lAcP99EH/XPPAcYcHA==}
     engines: {node: '>=18.0.0'}
 
   mime-db@1.54.0:
@@ -492,8 +492,8 @@ packages:
     resolution: {integrity: sha512-OZs6gsjF4vMp32qrCbiVSkrFmXtG/AZhY3t0iAMrMBiAZyV9oALtXO8hsrHbMXF9x6L3grlFuwW2oAz7cav+Gw==}
     engines: {node: '>= 0.6'}
 
-  undici@7.6.0:
-    resolution: {integrity: sha512-gaFsbThjrDGvAaD670r81RZro/s6H2PVZF640Qn0p5kZK+/rim7/mmyfp2W7VB5vOMaFM8vuFBJUaMlaZTYHlA==}
+  undici@7.7.0:
+    resolution: {integrity: sha512-tZ6+5NBq4KH35rr46XJ2JPFKxfcBlYNaqLF/wyWIO9RMHqqU/gx/CLB1Y2qMcgB8lWw/bKHa7qzspqCN7mUHvA==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -580,7 +580,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       toad-cache: 3.7.0
-      undici: 7.6.0
+      undici: 7.7.0
 
   '@mercuryworkshop/bare-mux@2.1.7': {}
 
@@ -603,7 +603,7 @@ snapshots:
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.2
-      meriyah: 6.0.5
+      meriyah: 6.0.6
       parse5: 7.2.1
       set-cookie-parser: 2.7.1
 
@@ -840,7 +840,7 @@ snapshots:
 
   merge-descriptors@2.0.0: {}
 
-  meriyah@6.0.5: {}
+  meriyah@6.0.6: {}
 
   mime-db@1.54.0: {}
 
@@ -992,7 +992,7 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  undici@7.6.0: {}
+  undici@7.7.0: {}
 
   unpipe@1.0.0: {}
 
