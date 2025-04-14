@@ -27,7 +27,7 @@ importers:
         specifier: ^2.8.5
         version: 2.8.5
       dotenv:
-        specifier: ^16.5.0
+        specifier: ^16.4.5
         version: 16.5.0
       express:
         specifier: ^5.0.0
@@ -492,8 +492,8 @@ packages:
     resolution: {integrity: sha512-OZs6gsjF4vMp32qrCbiVSkrFmXtG/AZhY3t0iAMrMBiAZyV9oALtXO8hsrHbMXF9x6L3grlFuwW2oAz7cav+Gw==}
     engines: {node: '>= 0.6'}
 
-  undici@7.7.0:
-    resolution: {integrity: sha512-tZ6+5NBq4KH35rr46XJ2JPFKxfcBlYNaqLF/wyWIO9RMHqqU/gx/CLB1Y2qMcgB8lWw/bKHa7qzspqCN7mUHvA==}
+  undici@7.8.0:
+    resolution: {integrity: sha512-vFv1GA99b7eKO1HG/4RPu2Is3FBTWBrmzqzO0mz+rLxN3yXkE4mqRcb8g8fHxzX4blEysrNZLqg5RbJLqX5buA==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -580,7 +580,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       toad-cache: 3.7.0
-      undici: 7.7.0
+      undici: 7.8.0
 
   '@mercuryworkshop/bare-mux@2.1.7': {}
 
@@ -992,7 +992,7 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  undici@7.7.0: {}
+  undici@7.8.0: {}
 
   unpipe@1.0.0: {}
 
