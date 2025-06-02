@@ -101,8 +101,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fastify/error@4.1.0':
-    resolution: {integrity: sha512-KeFcciOr1eo/YvIXHP65S94jfEEqn1RxTRBT1aJaHxY5FK0/GDXYozsQMMWlZoHgi8i0s+YtrLsgj/JkUUjSkQ==}
+  '@fastify/error@4.2.0':
+    resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
 
   '@fastify/http-proxy@11.1.2':
     resolution: {integrity: sha512-DDceCz1DIEa4vUsQ0DhMqwiZdZUCG0RByY51k0BndBLo7bWpO3QuzLpZTS7Hr6Bp6r82SRmAinM0uPpQse1zqA==}
@@ -561,7 +561,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@fastify/error@4.1.0': {}
+  '@fastify/error@4.2.0': {}
 
   '@fastify/http-proxy@11.1.2':
     dependencies:
@@ -575,7 +575,7 @@ snapshots:
 
   '@fastify/reply-from@12.1.0':
     dependencies:
-      '@fastify/error': 4.1.0
+      '@fastify/error': 4.2.0
       end-of-stream: 1.4.4
       fast-content-type-parse: 2.0.1
       fast-querystring: 1.1.2
