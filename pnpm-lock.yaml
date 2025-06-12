@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/http-proxy':
-        specifier: ^11.0.0
-        version: 11.1.2
+        specifier: ^11.2.0
+        version: 11.2.0
       '@nebula-services/bare-server-node':
         specifier: ^2.0.4
         version: 2.0.4
@@ -104,8 +104,8 @@ packages:
   '@fastify/error@4.2.0':
     resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
 
-  '@fastify/http-proxy@11.1.2':
-    resolution: {integrity: sha512-DDceCz1DIEa4vUsQ0DhMqwiZdZUCG0RByY51k0BndBLo7bWpO3QuzLpZTS7Hr6Bp6r82SRmAinM0uPpQse1zqA==}
+  '@fastify/http-proxy@11.2.0':
+    resolution: {integrity: sha512-sHhAJEGnVefw3P4N/HDyo2lGagBwYUePXE8kXflKnNF+4vYxNItPMoNjETpIEYbuBeqoV7lHOgAKu0+y9K7SUA==}
 
   '@fastify/reply-from@12.1.0':
     resolution: {integrity: sha512-5SvMj0NnAAhno/MIv+bErCfzYxcqTueqUxCyub/i+68/CqYWroYg0/p8D0ZhrSQcDigowaKk+MEQSoLjbGwZ+g==}
@@ -567,7 +567,7 @@ snapshots:
 
   '@fastify/error@4.2.0': {}
 
-  '@fastify/http-proxy@11.1.2':
+  '@fastify/http-proxy@11.2.0':
     dependencies:
       '@fastify/reply-from': 12.1.0
       fast-querystring: 1.1.2
