@@ -18,7 +18,7 @@ importers:
         specifier: ^3.2.7
         version: 3.2.10
       chalk:
-        specifier: ^5.6.0
+        specifier: ^5.3.0
         version: 5.6.0
       cookie-parser:
         specifier: ^1.4.7
@@ -107,8 +107,8 @@ packages:
   '@fastify/http-proxy@11.3.0':
     resolution: {integrity: sha512-FXFxkdTlXqVI11fqlxmHqOPzIo0elBA60o3bfdh2seD44KWOBBzelzCVgs1OelrxuADCyWUQp2ZxA2wp3mqQMg==}
 
-  '@fastify/reply-from@12.3.0':
-    resolution: {integrity: sha512-KFAYL5boBOFUx835/6RTyZpifWxFtBE7qrmm8UJ+QwfEUVPIGy2QQK5iKxpg+GGPh4SdNxoy+sh3qWq+oP6Z+g==}
+  '@fastify/reply-from@12.3.1':
+    resolution: {integrity: sha512-uaeijLjIceeU+T+9P50rMSOkLeKfBpv9blvw3kbK9+8ZJxTjGAgDkveW20ZiWMerWKd7WVHx6NiMPvQJ55eBLQ==}
 
   '@mercuryworkshop/bare-mux@2.1.7':
     resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
@@ -501,8 +501,8 @@ packages:
     resolution: {integrity: sha512-OZs6gsjF4vMp32qrCbiVSkrFmXtG/AZhY3t0iAMrMBiAZyV9oALtXO8hsrHbMXF9x6L3grlFuwW2oAz7cav+Gw==}
     engines: {node: '>= 0.6'}
 
-  undici@7.13.0:
-    resolution: {integrity: sha512-l+zSMssRqrzDcb3fjMkjjLGmuiiK2pMIcV++mJaAc9vhjSGpvM7h43QgP+OAMb1GImHmbPyG2tBXeuyG5iY4gA==}
+  undici@7.14.0:
+    resolution: {integrity: sha512-Vqs8HTzjpQXZeXdpsfChQTlafcMQaaIwnGwLam1wudSSjlJeQ3bw1j+TLPePgrCnCpUXx7Ba5Pdpf5OBih62NQ==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -573,7 +573,7 @@ snapshots:
 
   '@fastify/http-proxy@11.3.0':
     dependencies:
-      '@fastify/reply-from': 12.3.0
+      '@fastify/reply-from': 12.3.1
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       ws: 8.18.3
@@ -581,7 +581,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@fastify/reply-from@12.3.0':
+  '@fastify/reply-from@12.3.1':
     dependencies:
       '@fastify/error': 4.2.0
       end-of-stream: 1.4.5
@@ -589,7 +589,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 5.0.1
       toad-cache: 3.7.0
-      undici: 7.13.0
+      undici: 7.14.0
 
   '@mercuryworkshop/bare-mux@2.1.7': {}
 
@@ -1005,7 +1005,7 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  undici@7.13.0: {}
+  undici@7.14.0: {}
 
   unpipe@1.0.0: {}
 
