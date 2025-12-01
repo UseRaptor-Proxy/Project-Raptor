@@ -110,8 +110,8 @@ packages:
   '@fastify/reply-from@12.4.0':
     resolution: {integrity: sha512-2MGQ3c/Sf3YKs6/YNwZgk7v6udDeA4AmlqeaxKHVFg/0ZPN2T1AjtU0SZ8VmIZsxZXQVOlhjR43oVydbuqm8SQ==}
 
-  '@mercuryworkshop/bare-mux@2.1.7':
-    resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
+  '@mercuryworkshop/bare-mux@2.1.8':
+    resolution: {integrity: sha512-rI3S7Osyr2ZWmG6J6v3MLS1ZT269lx1DrAjM47q0aoBYnfgUZTRvZqY0Globb8ipTi02d5x6dTJBeUBt6dZsag==}
 
   '@nebula-services/bare-server-node@2.0.4':
     resolution: {integrity: sha512-Jcr+QtkLJVmppdbBarEbRp1TtCsL4pjFIcX6+KPURRqcsOP7hZfYclhjmCserwEC7jT+WBduXpFd3qwqeRBNew==}
@@ -137,8 +137,8 @@ packages:
     resolution: {integrity: sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==}
     engines: {node: '>= 0.8'}
 
-  body-parser@2.2.0:
-    resolution: {integrity: sha512-02qvAaxv8tp7fBa/mw1ga98OGm+eCbqzJOKoRt70sLmfEEi+jyBYVTDGfCL/k06/4EMk/z01gCe7HoCH/f2LTg==}
+  body-parser@2.2.1:
+    resolution: {integrity: sha512-nfDwkulwiZYQIGwxdy0RUmowMhKcFVcYXUU7m4QlKYim1rUtg83xm2yjZ40QjDuc291AJjjeSc9b++AWHSgSHw==}
     engines: {node: '>=18'}
 
   buffer-from@1.1.2:
@@ -323,10 +323,6 @@ packages:
     resolution: {integrity: sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==}
     engines: {node: '>= 0.8'}
 
-  iconv-lite@0.6.3:
-    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
-    engines: {node: '>=0.10.0'}
-
   iconv-lite@0.7.0:
     resolution: {integrity: sha512-cf6L2Ds3h57VVmkZe+Pn+5APsT7FpqJtEhhieDCvrE2MK5Qk9MyffgQyuxQTm6BChfeZNtcOLHp9IcWRVcIcBQ==}
     engines: {node: '>=0.10.0'}
@@ -341,8 +337,8 @@ packages:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
 
-  ipaddr.js@2.2.0:
-    resolution: {integrity: sha512-Ag3wB2o37wslZS19hZqorUnrnzSkpOVy+IiiDEiTqNubEYpYuHWIf6K4psgN2ZWKExS4xhVCrRVfb/wfW8fWJA==}
+  ipaddr.js@2.3.0:
+    resolution: {integrity: sha512-Zv/pA+ciVFbCSBBjGfaKUya/CcGmUHzTydLMaTwrUUEM2DIEO3iZvueGxmacvmN50fGpGVKeTXpb2LcYQxeVdg==}
     engines: {node: '>= 10'}
 
   is-promise@4.0.0:
@@ -587,7 +583,7 @@ snapshots:
       toad-cache: 3.7.0
       undici: 7.16.0
 
-  '@mercuryworkshop/bare-mux@2.1.7': {}
+  '@mercuryworkshop/bare-mux@2.1.8': {}
 
   '@nebula-services/bare-server-node@2.0.4':
     dependencies:
@@ -595,7 +591,7 @@ snapshots:
       commander: 10.0.1
       dotenv: 16.6.1
       http-errors: 2.0.1
-      ipaddr.js: 2.2.0
+      ipaddr.js: 2.3.0
       source-map-support: 0.5.21
       ws: 8.18.3
     transitivePeerDependencies:
@@ -604,7 +600,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.7
+      '@mercuryworkshop/bare-mux': 2.1.8
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.3
@@ -625,13 +621,13 @@ snapshots:
     dependencies:
       safe-buffer: 5.1.2
 
-  body-parser@2.2.0:
+  body-parser@2.2.1:
     dependencies:
       bytes: 3.1.2
       content-type: 1.0.5
       debug: 4.4.3
       http-errors: 2.0.1
-      iconv-lite: 0.6.3
+      iconv-lite: 0.7.0
       on-finished: 2.4.1
       qs: 6.14.0
       raw-body: 3.0.2
@@ -726,7 +722,7 @@ snapshots:
   express@5.1.0:
     dependencies:
       accepts: 2.0.0
-      body-parser: 2.2.0
+      body-parser: 2.2.1
       content-disposition: 1.0.1
       content-type: 1.0.5
       cookie: 0.7.2
@@ -825,10 +821,6 @@ snapshots:
       statuses: 2.0.2
       toidentifier: 1.0.1
 
-  iconv-lite@0.6.3:
-    dependencies:
-      safer-buffer: 2.1.2
-
   iconv-lite@0.7.0:
     dependencies:
       safer-buffer: 2.1.2
@@ -839,7 +831,7 @@ snapshots:
 
   ipaddr.js@1.9.1: {}
 
-  ipaddr.js@2.2.0: {}
+  ipaddr.js@2.3.0: {}
 
   is-promise@4.0.0: {}
 
