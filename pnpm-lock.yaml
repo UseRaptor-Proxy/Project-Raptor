@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/http-proxy':
-        specifier: ^11.0.0
-        version: 11.3.0
+        specifier: ^11.4.0
+        version: 11.4.0
       '@nebula-services/bare-server-node':
         specifier: ^2.0.4
         version: 2.0.4
@@ -30,7 +30,7 @@ importers:
         specifier: ^17.0.0
         version: 17.2.3
       express:
-        specifier: ^5.2.1
+        specifier: ^5.0.0
         version: 5.2.1
       express-basic-auth:
         specifier: ^1.2.1
@@ -104,11 +104,11 @@ packages:
   '@fastify/error@4.2.0':
     resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
 
-  '@fastify/http-proxy@11.3.0':
-    resolution: {integrity: sha512-FXFxkdTlXqVI11fqlxmHqOPzIo0elBA60o3bfdh2seD44KWOBBzelzCVgs1OelrxuADCyWUQp2ZxA2wp3mqQMg==}
+  '@fastify/http-proxy@11.4.0':
+    resolution: {integrity: sha512-AeC/7DrCeukqfwJidjLQC3KkgpRZTpki38uHP7Uo/5xSaW7QZ0Ldq7S+mrWLbYvNfGYMy2SRhTBYrfyNApN4gw==}
 
-  '@fastify/reply-from@12.4.0':
-    resolution: {integrity: sha512-2MGQ3c/Sf3YKs6/YNwZgk7v6udDeA4AmlqeaxKHVFg/0ZPN2T1AjtU0SZ8VmIZsxZXQVOlhjR43oVydbuqm8SQ==}
+  '@fastify/reply-from@12.5.0':
+    resolution: {integrity: sha512-m7mTGjgtnpnZBk4I8r6eFJY8WB4kyvXJo2nAf5PBm5f3mj3P7G6H2D7mhmF25os/n6EGMWVyw/bpTUehvy0i8g==}
 
   '@mercuryworkshop/bare-mux@2.1.8':
     resolution: {integrity: sha512-rI3S7Osyr2ZWmG6J6v3MLS1ZT269lx1DrAjM47q0aoBYnfgUZTRvZqY0Globb8ipTi02d5x6dTJBeUBt6dZsag==}
@@ -563,9 +563,9 @@ snapshots:
 
   '@fastify/error@4.2.0': {}
 
-  '@fastify/http-proxy@11.3.0':
+  '@fastify/http-proxy@11.4.0':
     dependencies:
-      '@fastify/reply-from': 12.4.0
+      '@fastify/reply-from': 12.5.0
       fast-querystring: 1.1.2
       fastify-plugin: 5.1.0
       ws: 8.18.3
@@ -573,7 +573,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@fastify/reply-from@12.4.0':
+  '@fastify/reply-from@12.5.0':
     dependencies:
       '@fastify/error': 4.2.0
       end-of-stream: 1.4.5
