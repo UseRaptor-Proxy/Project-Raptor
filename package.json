@@ -28,7 +28,7 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.10"
+    "@biomejs/biome": "2.3.11"
   },
   "packageManager": "pnpm@10.27.0"
 }
