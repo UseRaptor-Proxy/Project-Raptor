@@ -111,8 +111,8 @@ packages:
   '@fastify/http-proxy@11.4.1':
     resolution: {integrity: sha512-sMYEIB0c7qCYutpZyS12c8xnVgmEMSUUVU2XjcNq2JzHf6Hta1BWcpnG5FXxR3WEm48uZNCi0MxnIYtwjwd21Q==}
 
-  '@fastify/reply-from@12.6.0':
-    resolution: {integrity: sha512-NIV5YiQR5eNU0dg0G050yHpxb1D1HZ1XD8gIcpyT74qDHYLXDD913VjnfzwI7bbiZ/F+cxHkbduC22K6rfXywA==}
+  '@fastify/reply-from@12.6.1':
+    resolution: {integrity: sha512-J95lfqd6wWhAF5Lx1Tt2Htaite/Bmk9bEAsGFR8+YakjCdgOPK+WX9IUeRXUX4e7bdf23rP/+xPPf/vICAs73Q==}
 
   '@mercuryworkshop/bare-mux@2.1.8':
     resolution: {integrity: sha512-rI3S7Osyr2ZWmG6J6v3MLS1ZT269lx1DrAjM47q0aoBYnfgUZTRvZqY0Globb8ipTi02d5x6dTJBeUBt6dZsag==}
@@ -569,7 +569,7 @@ snapshots:
 
   '@fastify/http-proxy@11.4.1':
     dependencies:
-      '@fastify/reply-from': 12.6.0
+      '@fastify/reply-from': 12.6.1
       fast-querystring: 1.1.2
       fastify-plugin: 5.1.0
       ws: 8.19.0
@@ -577,7 +577,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@fastify/reply-from@12.6.0':
+  '@fastify/reply-from@12.6.1':
     dependencies:
       '@fastify/error': 4.2.0
       end-of-stream: 1.4.5
