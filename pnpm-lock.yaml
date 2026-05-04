@@ -114,8 +114,8 @@ packages:
   '@fastify/reply-from@12.6.2':
     resolution: {integrity: sha512-FhMvsRJa4HMG0q0/Yi06sgwVFd/Wc8E/+RbHsqB0Q+883C66RPrS6qwZKBPje2mVzsyEb9sjq7wlyvi35zRW0A==}
 
-  '@mercuryworkshop/bare-mux@2.1.8':
-    resolution: {integrity: sha512-rI3S7Osyr2ZWmG6J6v3MLS1ZT269lx1DrAjM47q0aoBYnfgUZTRvZqY0Globb8ipTi02d5x6dTJBeUBt6dZsag==}
+  '@mercuryworkshop/bare-mux@2.1.9':
+    resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
 
   '@nebula-services/bare-server-node@2.0.4':
     resolution: {integrity: sha512-Jcr+QtkLJVmppdbBarEbRp1TtCsL4pjFIcX6+KPURRqcsOP7hZfYclhjmCserwEC7jT+WBduXpFd3qwqeRBNew==}
@@ -341,8 +341,8 @@ packages:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
 
-  ipaddr.js@2.3.0:
-    resolution: {integrity: sha512-Zv/pA+ciVFbCSBBjGfaKUya/CcGmUHzTydLMaTwrUUEM2DIEO3iZvueGxmacvmN50fGpGVKeTXpb2LcYQxeVdg==}
+  ipaddr.js@2.4.0:
+    resolution: {integrity: sha512-9VGk3HGanVE6JoZXHiCpnGy5X0jYDnN4EA4lntFPj+1vIWlFhIylq2CrrCOJH9EAhc5CYhq18F2Av2tgoAPsYQ==}
     engines: {node: '>= 10'}
 
   is-promise@4.0.0:
@@ -587,7 +587,7 @@ snapshots:
       toad-cache: 3.7.0
       undici: 7.25.0
 
-  '@mercuryworkshop/bare-mux@2.1.8': {}
+  '@mercuryworkshop/bare-mux@2.1.9': {}
 
   '@nebula-services/bare-server-node@2.0.4':
     dependencies:
@@ -595,7 +595,7 @@ snapshots:
       commander: 10.0.1
       dotenv: 16.6.1
       http-errors: 2.0.1
-      ipaddr.js: 2.3.0
+      ipaddr.js: 2.4.0
       source-map-support: 0.5.21
       ws: 8.20.0
     transitivePeerDependencies:
@@ -604,7 +604,7 @@ snapshots:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.1.8
+      '@mercuryworkshop/bare-mux': 2.1.9
       astring: 1.9.0
       events: 3.3.0
       idb: 8.0.3
@@ -836,7 +836,7 @@ snapshots:
 
   ipaddr.js@1.9.1: {}
 
-  ipaddr.js@2.3.0: {}
+  ipaddr.js@2.4.0: {}
 
   is-promise@4.0.0: {}
 
