@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/http-proxy':
-        specifier: ^11.0.0
-        version: 11.4.4
+        specifier: ^11.5.0
+        version: 11.5.0
       '@nebula-services/bare-server-node':
         specifier: ^2.0.4
         version: 2.0.4
@@ -108,8 +108,8 @@ packages:
   '@fastify/error@4.2.0':
     resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
 
-  '@fastify/http-proxy@11.4.4':
-    resolution: {integrity: sha512-wXoKaxW31pQc6H48Xqx//j6A2ikOiadht55DNkEFaseEUkJ9MzvURLK6Qqg0OOIEZGjTiEjjnbERv3NLFBc2Ug==}
+  '@fastify/http-proxy@11.5.0':
+    resolution: {integrity: sha512-UxmqkVvTRzbN8A8xSRBmKFhGufhFGDxoBCzPkp5+GDYRb4ew/WwmsZTYd13yJ3TWyOlpRhoQVVLHfcb0wPVkCg==}
 
   '@fastify/reply-from@12.6.2':
     resolution: {integrity: sha512-FhMvsRJa4HMG0q0/Yi06sgwVFd/Wc8E/+RbHsqB0Q+883C66RPrS6qwZKBPje2mVzsyEb9sjq7wlyvi35zRW0A==}
@@ -501,8 +501,8 @@ packages:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
     engines: {node: '>= 18'}
 
-  undici@7.26.0:
-    resolution: {integrity: sha512-3O9Tf67pGhgOv9jM35AbhkXAKi13f3oy3aE4CSgr+TckGeY+/iu97ZXN+J7DpHPzLbVApFd1IFhcnBjREYXYcg==}
+  undici@7.27.0:
+    resolution: {integrity: sha512-+t2Z/GwkZQDtu00813aP66ygViGtPHKhhoFZpQKpKrE+9jIgES+Zw+mFNaDWOVRKiuJjuqKHzD3B1sfGg8+ZOQ==}
     engines: {node: '>=20.18.1'}
 
   unpipe@1.0.0:
@@ -571,7 +571,7 @@ snapshots:
 
   '@fastify/error@4.2.0': {}
 
-  '@fastify/http-proxy@11.4.4':
+  '@fastify/http-proxy@11.5.0':
     dependencies:
       '@fastify/reply-from': 12.6.2
       fast-querystring: 1.1.2
@@ -589,7 +589,7 @@ snapshots:
       fast-querystring: 1.1.2
       fastify-plugin: 5.1.0
       toad-cache: 3.7.1
-      undici: 7.26.0
+      undici: 7.27.0
 
   '@mercuryworkshop/bare-mux@2.1.9': {}
 
@@ -1002,7 +1002,7 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.2
 
-  undici@7.26.0: {}
+  undici@7.27.0: {}
 
   unpipe@1.0.0: {}
 
